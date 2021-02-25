@@ -44,20 +44,9 @@ is
    -- =======================================================
    -- GENERIC FILE VARIABLES
    -- =======================================================
-   inp_fmode   : ATIO.File_Mode  := ATIO.In_File;
-   inp_fname   : String          := "files/bismillah.ngc";
-   -- inp_fname   : String         := "files/just-KSG.ngc";
-   
-   out_fmode   : ATIO.File_Mode  := ATIO.Out_File;
-   out_fname   : String          := "files/write_bismillah.txt";
-   -- out_fname   : String          := "files/write_just_KSG.txt";
-   
-   app_fmode   : ATIO.File_Mode  := ATIO.Append_File;
-   app_fname   : String          := "files/append_session_01.txt";  
-   
-   write_fmode : ATIO.File_Mode  := ATIO.Out_File;
-   write_fname : String          := "files/random_integers_floats.txt";
-     
+   inp_gcode_file1   : String := "files/bismillah.ngc";
+   inp_gcode_file2   : String := "files/just-KSG.ngc";
+          
 -- ========================================================  
 begin
    
@@ -69,9 +58,12 @@ begin
    -- PARWF.exec_read_write_file (inp_fmode, inp_fname, out_fmode, out_fname);
    -- PAWDF.exec_write_display_file (write_fmode, write_fname);
    
-   PCGL.exec_read_display_file (inp_fmode, inp_fname);  
-   PRCL.exec_read_display_file (inp_fmode, inp_fname);  
-   PPGL.exec_read_display_file (inp_fmode, inp_fname);  
+   -- PCGL.exec_read_display_file (inp_fmode, inp_fname);  
+   -- PRCL.exec_read_display_file (inp_fmode, inp_fname);  
+   -- PPGL.exec_read_display_file (inp_fmode, inp_fname);  
+   
+   PCGL.exec_classify_gcode_lines(inp_gcode_file1);
+   -- PRCL.exec_remove_comment_lines("files/out_gcode_file01.txt");
    
    -- =====================================================
             
@@ -80,3 +72,15 @@ begin
 end main_ada_process_ngc_gcodes;
 -- ========================================================
 
+-- =======================================================
+-- LINE ACCOUNTING AND CLASSIFICATION SUMMARY 
+-- =======================================================
+-- lineCount        =  328
+-- max_lenUBlineStr =  99
+-- lineBlank        =  62
+-- lineNotBlank     =  266
+-- lineTagged       =  328
+-- Curr File Output = files/out_gcode_file01.txt
+
+-- 2021-02-25 10:03:33.57042091241 Alhamdulillah 3 times WRY
+-- [2021-02-25 18:03:33] process terminated successfully, elapsed time: 02.20s

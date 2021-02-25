@@ -10,7 +10,7 @@ RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U main_ada_process_ngc_gcodes%b  main_ada_process_ngc_gcodes.adb  71b81a7e NE OO SU IL
+U main_ada_process_ngc_gcodes%b  main_ada_process_ngc_gcodes.adb  8239d510 NE OO SU IL
 W ada%s			ada.ads			ada.ali
 W ada.real_time%s	a-reatim.adb		a-reatim.ali
 W ada.strings%s		a-string.ads		a-string.ali
@@ -42,8 +42,8 @@ D a-unccon.ads		20200312110721 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20200312110721 5ab55268 interfaces%s
 D i-c.ads		20200312110721 5421119b interfaces.c%s
 D i-cstrea.ads		20200312110721 e53d8b8e interfaces.c_streams%s
-D main_ada_process_ngc_gcodes.adb  20210225060903 b7ee873a main_ada_process_ngc_gcodes%b
-D pkg01_classify_gcode_lines.ads  20210225055647 768e9e7e pkg01_classify_gcode_lines%s
+D main_ada_process_ngc_gcodes.adb  20210225100321 e5b18a0c main_ada_process_ngc_gcodes%b
+D pkg01_classify_gcode_lines.ads  20210225094023 d7505c26 pkg01_classify_gcode_lines%s
 D pkg02_remove_comment_lines.ads  20210225060653 8982af5a pkg02_remove_comment_lines%s
 D pkg03_process_gcode_line.ads  20210225060613 d9e0c6ec pkg03_process_gcode_line%s
 D pkg_ada_dtstamp.ads	20210221081420 f15ab596 pkg_ada_dtstamp%s
@@ -90,46 +90,33 @@ X 11 a-strunb.ads
 76K21*Unbounded 491e26 18|9w18 9r45 31r40
 X 13 a-textio.ads
 49K13*Text_IO 471e16 18|7w10 29r32
-53E9*File_Mode 53e54 18|48r23 52r23 56r23 59r23
-53n23*In_File{53E9} 18|48r42
-53n32*Out_File{53E9} 18|52r42 59r42
-53n42*Append_File{53E9} 18|56r42
-166U14*New_Line 18|67s9 81s9
-263U14*Put_Line 18|65s24 66s24 81s39
+166U14*New_Line 18|55s9 70s9
+263U14*Put_Line 18|53s24 54s24 70s39
 X 18 main_ada_process_ngc_gcodes.adb
-23U11*main_ada_process_ngc_gcodes 23b11 83l5 83t32
-29K12 ATIO=29:32 48r18 48r37 52r18 52r37 56r18 56r37 59r18 59r37 65r19 66r19
-. 67r4 81r4 81r34
+23U11*main_ada_process_ngc_gcodes 23b11 72l5 72t32
+29K12 ATIO=29:32 53r19 54r19 55r4 70r4 70r34
 30K12 ART=30:32
 31K12 ASU=31:40
-34K12 PADTS=34:28 65r4 66r4 81r19
+34K12 PADTS=34:28 53r4 54r4 70r19
 35K12 PAR=35:28
 36K12 PARDF=36:28
 37K12 PARWF=37:28
 38K12 PAWDF=38:28
-40K12 PCGL=40:28 75r4
-41K12 PRCL=41:28 76r4
-42K12 PPGL=42:28 77r4
-48e4 inp_fmode{13|53E9} 75r33 76r33 77r33
-49a4 inp_fname{string} 75r44 76r44 77r44
-52e4 out_fmode{13|53E9}
-53a4 out_fname{string}
-56e4 app_fmode{13|53E9}
-57a4 app_fname{string}
-59e4 write_fmode{13|53E9}
-60a4 write_fname{string}
+40K12 PCGL=40:28 65r4
+41K12 PRCL=41:28
+42K12 PPGL=42:28
+47a4 inp_gcode_file1{string} 65r35
+48a4 inp_gcode_file2{string}
 X 19 pkg01_classify_gcode_lines.ads
 8K9*pkg01_classify_gcode_lines 18|18w6 40r28 19|22e31
-16U14*exec_read_display_file 18|75s9
+16U14*exec_classify_gcode_lines 18|65s9
 X 20 pkg02_remove_comment_lines.ads
 8K9*pkg02_remove_comment_lines 18|19w6 41r28 20|22e31
-16U14*exec_read_display_file 18|76s9
 X 21 pkg03_process_gcode_line.ads
 8K9*pkg03_process_gcode_line 18|20w6 42r28 21|22e29
-16U14*exec_read_display_file 18|77s9
 X 22 pkg_ada_dtstamp.ads
 10K9*pkg_ada_dtstamp 18|12w6 34r28 22|31e20
-17U14*dtstamp 18|65s10 66s10 81s25
+17U14*dtstamp 18|53s10 54s10 70s25
 X 23 pkg_ada_random.ads
 3K9*pkg_ada_random 18|13w6 35r28 23|14e19
 X 24 pkg_ada_read_display_file.ads

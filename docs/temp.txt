@@ -1,0 +1,48 @@
+ -- ===============================================
+         -- CLASSIFICATION AND LINE ACCOUNTING
+         firstChar   := ASU.To_String (ASU.Unbounded_Slice(inp_UBlineStr, 1, 1));
+         first3Chars := ASU.To_String (ASU.Unbounded_Slice(inp_UBlineStr, 1, 3));
+         
+         ATIO.Put_Line ("Here 2"); 
+         
+         -- LINE CLASSIFICATION FIRST CHARACTER
+         if (firstChar = "(") then
+            countComment := countComment + 1;
+         end if;
+         
+         if (firstChar = "G") then
+            countG := countG + 1;
+         end if;
+      
+         ATIO.Put_Line ("Here 3"); 
+         
+         if (firstChar = "#") then
+            countHash := countHash + 1;
+         end if;
+         
+       ATIO.Put_Line ("Here 4"); 
+         -- ==================================================
+         
+        ATIO.Put_Line ("Here 4.5");  
+         if    (first3Chars = "G00") then
+            countG00 := countG00 + 1;
+      
+         elsif (first3Chars = "G01") then
+            countG01 := countG01 + 1;
+      
+         elsif (first3Chars = "G02") then
+            countG02 := countG02 + 1;
+            
+         elsif (first3Chars = "G03") then
+            countG03 := countG03 + 1;
+      
+         elsif (first3Chars = "G21") then
+            countG21 := countG21 + 1;
+      
+         else
+            ATIO.Put_Line("Error. inp_first3Chars = " & (first3Chars) & " not found.");
+         end if;      
+         
+         
+          ATIO.Put_Line ("Here 5"); 
+         

@@ -13,8 +13,8 @@ is
    package SATIO renames Ada.Text_IO; 
    
    -- LIST OF PROCEDURES
-   procedure exec_read_display_file (inp_fmode : in SATIO.File_Mode; inp_fname : in String); 
-   
+   procedure exec_classify_gcode_lines (inp_gcode_file : in String);
+   procedure exec_tag_blank_line;
    
    -- LIST OF FUNCTIONS
       
