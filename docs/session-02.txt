@@ -1,0 +1,54 @@
+/home/wruslan/github-ump/ada-process-ngc-gcodes/exec/main_ada_process_ngc_gcodes.adx
+2021-02-25 16:56:21.83300125966 Bismillah 3 times WRY
+2021-02-25 16:56:21.83300135334 Running inside GNAT Studio Community
+
+=======================================================
+1. LINE ACCOUNTING (pkg01 classify gcode lines) 
+=======================================================
+Curr File Input  = files/bismillah.ngc
+
+lineCount        =  328
+max_lenUBlineStr =  99
+lineBlank        =  62
+lineControl      =  5
+lineNotBlank     =  261
+lineTagged       =  328
+
+Curr File Output = files/out_gcode_file_01.txt
+(2021-02-25 16:56:21.83300563364 finished execution.)
+
+=======================================================
+2. LINE ACCOUNTING (pkg02 remove comment lines) 
+=======================================================
+Curr File Input  = files/out_gcode_file_01.txt
+
+lineCount        =  328
+lineRemoved      =  105
+lineRemaining    =  223
+
+count_Percent    =  2
+count_Hash       =  7
+count_MCode      =  3
+count_GCode      =  211
+sum_AllCodes     =  223
+
+count_M1         =  0
+count_M2         =  1
+count_M3         =  1
+count_M4         =  0
+count_M5         =  1
+sum_MX           =  3
+
+count_G00        =  37
+count_G01        =  93
+count_G02        =  40
+count_G03        =  40
+count_G21        =  1
+sum_GXX          =  211
+
+Curr File Output = files/out_gcode_file_02.txt
+(2021-02-25 16:56:29.83304224987 finished execution.)
+
+2021-02-25 16:56:33.83304795000 Alhamdulillah 3 times WRY
+[2021-02-26 00:56:33] process terminated successfully, elapsed time: 12.17s
+

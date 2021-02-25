@@ -16,7 +16,7 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
-U pkg01_classify_gcode_lines%b  pkg01_classify_gcode_lines.adb  6b5ac145 OO PK IL
+U pkg01_classify_gcode_lines%b  pkg01_classify_gcode_lines.adb  02c63b20 OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.command_line%s	a-comlin.adb		a-comlin.ali
 Z ada.exceptions%s	a-except.adb		a-except.ali
@@ -63,7 +63,7 @@ D interfac.ads		20200312110721 5ab55268 interfaces%s
 D i-c.ads		20200312110721 5421119b interfaces.c%s
 D i-cstrea.ads		20200312110721 e53d8b8e interfaces.c_streams%s
 D pkg01_classify_gcode_lines.ads  20210225094023 d7505c26 pkg01_classify_gcode_lines%s
-D pkg01_classify_gcode_lines.adb  20210225112043 81811d7f pkg01_classify_gcode_lines%b
+D pkg01_classify_gcode_lines.adb  20210225165614 e81de71a pkg01_classify_gcode_lines%b
 D pkg_ada_dtstamp.ads	20210221081420 f15ab596 pkg_ada_dtstamp%s
 D system.ads		20200312110721 4635ec04 system%s
 D s-atacco.ads		20200312110721 4c36d12f system.address_to_access_conversions%s
@@ -99,81 +99,78 @@ D s-traent.ads		20200312110721 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20200312110721 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20200312110721 1b7d22d2 system.wch_con%s
 X 1 ada.ads
-16K9*Ada 20e8 24|5r6 13r26 25|7r6 8r6 13r6 14r6 15r6 16r6 17r6 18r6 31r26
-. 32r26
+16K9*Ada 20e8 24|5r6 13r26 25|7r6 8r6 13r6 14r6 15r6 16r6 17r6 18r6 29r26
+. 30r26
 X 4 a-comlin.ads
 36K13*Command_Line 144e21 25|18w10
 X 8 a-numeri.ads
 16K13*Numerics 32e17 25|8w10
 X 11 a-string.ads
-16K13*Strings 35e16 25|13w10 14r10 15r10 16r10 17r10 32r30
+16K13*Strings 35e16 25|13w10 14r10 15r10 16r10 17r10 30r30
 X 12 a-strbou.ads
 39K21*Bounded 914e24 25|15w18
 X 13 a-strfix.ads
 18K21*Fixed 251e22 25|14w18
 X 16 a-strunb.ads
-76K21*Unbounded 491e26 25|16w18 17r18 32r38
-79R9*Unbounded_String<6|43R9> 474e14 25|41r28
-84V13*Length{natural} 25|119s35
-94V13*To_Unbounded_String{79R9} 25|115s31
-100V13*To_String{string} 25|132s45
+76K21*Unbounded 491e26 25|16w18 17r18 30r38
+79R9*Unbounded_String<6|43R9> 474e14 25|33r28 41r28
+84V13*Length{natural} 25|98s35
+94V13*To_Unbounded_String{79R9} 25|63s31 94s31
+100V13*To_String{string} 25|65s52 108s45 111s45 116s45 128s50 148s51
 X 17 a-suteio.ads
 39K31*Text_IO 61e34 25|17w28
 X 19 a-textio.ads
-49K13*Text_IO 471e16 24|5w10 13r30 25|7w10 31r30
-52P9*File_Type 25|35r36
-53n23*In_File{53E9} 25|75r38
-53n32*Out_File{53E9} 25|76r38
-86U14*Create 25|76s12
-92U14*Open 25|75s12
-98U14*Close 25|80s12 81s12
-114U14*Set_Output 25|140s12 152s12 164s12
-118V13*Standard_Output{52P9} 25|140s28 164s28
-166U14*New_Line 25|73s12
-183V13*End_Of_File{boolean} 25|114s22
-242U14*Put 25|150s12 162s12
-253V13*Get_Line{string} 25|115s56
-259U14*Put_Line 25|127s19 132s18
-263U14*Put_Line 25|71s12 72s12 141s12 142s12 143s12 144s12 145s12 146s12
-. 147s12 148s12 149s12 150s43 153s12 154s12 155s12 156s12 157s12 158s12 159s12
-. 160s12 161s12 162s43
+49K13*Text_IO 471e16 24|5w10 13r30 25|7w10 29r30
+52P9*File_Type 25|34r23 35r23 81r30
+53n23*In_File{53E9} 25|65r38
+53n32*Out_File{53E9} 25|66r38 142r42
+86U14*Create 25|66s12 142s12
+92U14*Open 25|65s12
+98U14*Close 25|71s12 72s12 160s12
+114U14*Set_Output 25|124s12 144s12 163s12
+118V13*Standard_Output{52P9} 25|124s28 163s28
+166U14*New_Line 25|129s12 136s12 139s12
+183V13*End_Of_File{boolean} 25|93s22
+242U14*Put 25|138s12 158s12
+253V13*Get_Line{string} 25|94s56
+259U14*Put_Line 25|106s18 108s18 111s18 116s18
+263U14*Put_Line 25|125s12 126s12 127s12 128s12 130s12 131s12 132s12 133s12
+. 134s12 135s12 137s12 138s43 145s12 146s12 147s12 148s12 149s12 150s12 151s12
+. 152s12 153s12 154s12 155s12 156s12 157s12 158s43
 X 24 pkg01_classify_gcode_lines.ads
-8K9*pkg01_classify_gcode_lines 22l5 22e31 25|26b14 174l5 174t31
+8K9*pkg01_classify_gcode_lines 22l5 22e31 25|24b14 172l5 172t31
 13K12*SATIO=13:30
-16U14*exec_classify_gcode_lines 16>41 25|65b14 84l8 84t33
-16a41 inp_gcode_file{string} 25|65b41 72r44 75r48
-17U14*exec_tag_blank_line 25|78s7 88b14 166l8 166t27
+16U14*exec_classify_gcode_lines 16>41 25|55b14 75l8 75t33
+16a41 inp_gcode_file{string} 25|55b41 63r51
+17U14*exec_tag_blank_line 25|69s7 77b14 165l8 165t27
 X 25 pkg01_classify_gcode_lines.adb
-31K12 ATIO=31:30 35r31 71r7 72r7 73r7 75r7 75r33 76r7 76r33 80r7 81r7 114r17
-. 115r51 127r14 132r13 140r7 140r23 141r7 142r7 143r7 144r7 145r7 146r7 147r7
-. 148r7 149r7 150r7 150r38 152r7 153r7 154r7 155r7 156r7 157r7 158r7 159r7
-. 160r7 161r7 162r7 162r38 164r7 164r23
-32K12 ASU=32:38 41r24 115r27 119r31 132r41
-33K12 PADTS=33:26 82r7 150r23 162r23
-35p4 inp_fhandle{19|52P9} 75m20 75r20 80m19 80r19 114r35 115r66
-35p17 out_fhandle{19|52P9} 76m20 76r20 81m19 81r19 127r29 132r28 152r23
-41r4 inp_UBlineStr{16|79R9} 115m10 119r43 132r56
-42i4 curr_lenUBlineStr{natural} 95m7 119m10 120r13 121r33 124r14
-43i4 max_lenUBlineStr{natural} 96m7 120r33 121m13 145r60 157r61
-45i4 lineCount{integer} 97m7 117m10 117r26 127r81 144r60 156r61
-46i4 lineTagged{integer} 98m7 136m10 136r24 148r60 160r61
-47i4 lineClassified{integer} 110m7
-48i4 lineNotClassified{integer} 111m7
-49i4 lineBlank{integer} 99m7 125m13 125r26 146r60 158r61
-50i4 lineNotBlank{integer} 100m7 130m13 130r29 147r60 159r61
-51i4 lineComment{integer} 101m7
-54a4 first3Chars{string}
-56i4 countG{integer} 103m7
-57i4 countG00{integer} 104m7
-58i4 countG01{integer} 105m7
-59i4 countG02{integer} 106m7
-60i4 countG03{integer} 107m7
-61i4 countG21{integer} 108m7
-62i4 countHash{integer} 109m7
+29K12 ATIO=29:30 34r18 35r18 65r7 65r33 66r7 66r33 71r7 72r7 81r25 93r17
+. 94r51 106r13 108r13 111r13 116r13 124r7 124r23 125r7 126r7 127r7 128r7
+. 129r7 130r7 131r7 132r7 133r7 134r7 135r7 136r7 137r7 138r7 138r38 139r7
+. 142r7 142r37 144r7 145r7 146r7 147r7 148r7 149r7 150r7 151r7 152r7 153r7
+. 154r7 155r7 156r7 157r7 158r7 158r38 160r7 163r7 163r23
+30K12 ASU=30:38 33r24 41r24 63r27 65r48 94r27 98r31 108r41 111r41 116r41
+. 128r46 148r47
+31K12 PADTS=31:26 73r7 138r23 158r23 161r7
+33r4 input_gcode_file{16|79R9} 63m7 65r62 128r60 148r61
+34p4 inp_fhandle{19|52P9} 65m20 65r20 71m19 71r19 93r35 94r66
+35p4 out_fhandle{19|52P9} 66m20 66r20 72m19 72r19 106r28 108r28 111r28 116r28
+41r4 inp_UBlineStr{16|79R9} 94m10 98r43 108r56 111r56 116r56
+42i4 curr_lenUBlineStr{natural} 84m7 98m10 99r13 100r33 103r14 107r17 110r17
+43i4 max_lenUBlineStr{natural} 85m7 99r33 100m13 131r60 151r61
+45i4 lineCount{integer} 86m7 96m10 96r26 106r80 130r60 150r61
+46i4 lineTagged{integer} 87m7 120m10 120r24 135r60 155r61
+47i4 lineClassified{integer}
+48i4 lineNotClassified{integer}
+49i4 lineBlank{integer} 88m7 104m13 104r26 132r60 152r61
+50i4 lineControl{integer} 89m7 109m13 109r28 112m13 112r28 133r60 153r61
+51i4 lineNotBlank{integer} 90m7 114m13 114r29 134r60 154r61
+52i4 lineComment{integer}
+81p7 out_FHReport_01{19|52P9} 142m20 142r20 144r23 160m19 160r19
 X 26 pkg_ada_dtstamp.ads
-10K9*pkg_ada_dtstamp 25|21w6 33r26 26|31e20
-17U14*dtstamp 25|150s29 162s29
-22U14*exec_delay_sec 25|82s13
+10K9*pkg_ada_dtstamp 25|21w6 31r26 26|31e20
+17U14*dtstamp 25|138s29 158s29
+22U14*exec_delay_sec 25|73s13 161s13
 X 27 system.ads
 67M9*Address
 X 38 s-memory.ads

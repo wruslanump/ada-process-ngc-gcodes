@@ -15,6 +15,7 @@ is
    -- LIST OF PROCEDURES
    procedure exec_remove_comment_lines(inp_fname : in String);
    procedure exec_remove_comment_and_blank_lines;
+   procedure exec_display_gcode_categories;
    
    -- LIST OF FUNCTIONS
       

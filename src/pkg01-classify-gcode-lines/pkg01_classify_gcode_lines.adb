@@ -20,8 +20,6 @@ with Ada.Command_Line;
 -- WRY CREATED PACKAGES 
 with pkg_ada_dtstamp;
 
-
-
 -- ========================================================
 package body pkg01_classify_gcode_lines
 -- ========================================================
@@ -32,8 +30,10 @@ is
    package ASU   renames Ada.Strings.Unbounded;
    package PADTS renames pkg_ada_dtstamp;
    
-   inp_fhandle, out_fhandle : ATIO.File_Type;    
-   
+   input_gcode_file  : ASU.Unbounded_String; 
+   inp_fhandle : ATIO.File_Type; 
+   out_fhandle : ATIO.File_Type;    
+      
    -- NOTE: two subtypes of type Integer: 
    -- Natural is an Integer which cannot be less than zero, 
    -- Positive is an Integer which cannot be less than 1.
@@ -47,19 +47,9 @@ is
    lineClassified    : Integer := 999;
    lineNotClassified : Integer := 999;  
    lineBlank    : Integer := 0;
+   lineControl  : Integer := 0;
    lineNotBlank : Integer := 0;
    lineComment  : Integer := 0;
-   
-   
-   first3Chars     : String  := "123"; --DUMMY
-   
-   countG    : Integer := 0;
-   countG00  : Integer := 0; 
-   countG01  : Integer := 0;
-   countG02  : Integer := 0;
-   countG03  : Integer := 0;
-   countG21  : Integer := 0;
-   countHash : Integer := 0;
    
    -- =====================================================
    procedure exec_classify_gcode_lines (inp_gcode_file : in String)
@@ -68,48 +58,37 @@ is
    is
       
    begin
-      ATIO.Put_Line("Run exec_read_display_file (inp_gcode_file)");
-      ATIO.Put_Line("inp_gcode_file = " & (inp_gcode_file));
-      ATIO.New_Line;
       
-      ATIO.Open   (inp_fhandle, ATIO.In_File,  inp_gcode_file);
+      -- Make input file name global package-wise
+      input_gcode_file := ASU.To_Unbounded_String(inp_gcode_file); 
+      
+      ATIO.Open   (inp_fhandle, ATIO.In_File,  ASU.To_String(input_gcode_file));
       ATIO.Create (out_fhandle, ATIO.Out_File, "files/out_gcode_file_01.txt");
       
-      exec_tag_blank_line;  -- Call internal procedure
+      -- Call internal procedure
+      exec_tag_blank_line;  
       
       ATIO.Close (inp_fhandle);
       ATIO.Close (out_fhandle);
       PADTS.exec_delay_sec (2); -- Ensure finish file closing.
            
    end exec_classify_gcode_lines;
-   -- ====================================================
-   
    -- =====================================================
    procedure exec_tag_blank_line
    -- =====================================================
    -- with SPARK_Mode => on
    is
+      out_FHReport_01 : ATIO.File_Type;
       
    begin
-      
-      curr_lenUBlineStr  := 1;
+      curr_lenUBlineStr := 1; -- Natural
       max_lenUBlineStr  := 1;
-      lineCount         := 0;
-      lineTagged        := 0;
+      lineCount    := 0;
+      lineTagged   := 0;
       lineBlank    := 0;
+      lineControl  := 0;
       lineNotBlank := 0; 
-      lineComment  := 0;
-      
-      countG    := 0;
-      countG00  := 0; 
-      countG01  := 0;
-      countG02  := 0;
-      countG03  := 0;
-      countG21  := 0;
-      countHash := 0;
-      lineClassified    := 0;
-      lineNotClassified := 0;  
-      
+              
       -- ==================================================
       while not ATIO.End_Of_File (inp_fhandle) loop
          inp_UBlineStr := ASU.To_Unbounded_String(ATIO.Get_Line (inp_fhandle));
@@ -124,8 +103,13 @@ is
          if (curr_lenUBlineStr) = 0 then
             lineBlank := lineBlank + 1;
             -- ATIO.Put_Line ("(Blank Line) LINETAG" & Integer'Image(lineCount));
-             ATIO.Put_Line (out_fhandle, "(Blank Line) LINETAG" & Integer'Image(lineCount));
-         
+            ATIO.Put_Line (out_fhandle, "(Blank Line) LINETAG" & Integer'Image(lineCount));
+         elsif (curr_lenUBlineStr) = 1 then
+            ATIO.Put_Line (out_fhandle, ASU.To_String (inp_UBlineStr) & " Control");
+            lineControl := lineControl + 1;
+         elsif (curr_lenUBlineStr) = 2 then
+            ATIO.Put_Line (out_fhandle, ASU.To_String (inp_UBlineStr) & " Control");
+            lineControl := lineControl + 1;
          else 
             lineNotBlank := lineNotBlank + 1; 
             -- ATIO.Put_Line (ASU.To_String (inp_UBlineStr)); 
@@ -139,33 +123,47 @@ is
       
       ATIO.Set_Output(ATIO.Standard_Output);
       ATIO.Put_Line ("=======================================================");
-      ATIO.Put_Line ("LINE ACCOUNTING AND CLASSIFICATION SUMMARY ");
-      ATIO.Put_Line ("=======================================================");  
+      ATIO.Put_Line ("1. LINE ACCOUNTING (pkg01 classify gcode lines) ");
+      ATIO.Put_Line ("======================================================="); 
+      ATIO.Put_Line ("Curr File Input  = " & ASU.To_String(input_gcode_file));
+      ATIO.New_Line;
       ATIO.Put_Line ("lineCount        = " & Integer'Image(lineCount));
       ATIO.Put_Line ("max_lenUBlineStr = " & Natural'Image(max_lenUBlineStr));
       ATIO.Put_Line ("lineBlank        = " & Integer'Image(lineBlank));
+      ATIO.Put_Line ("lineControl      = " & Integer'Image(lineControl));
       ATIO.Put_Line ("lineNotBlank     = " & Integer'Image(lineNotBlank));
       ATIO.Put_Line ("lineTagged       = " & Integer'Image(lineTagged));
+      ATIO.New_Line;
       ATIO.Put_Line ("Curr File Output = " & "files/out_gcode_file_01.txt");
       ATIO.Put ("("); PADTS.dtstamp; ATIO.Put_line("finished execution.)"); 
+      ATIO.New_Line;
       
-      ATIO.Set_Output(out_fhandle);
+      -- WRITE TO FILE ====================================
+      ATIO.Create (out_FHReport_01, ATIO.Out_File, "files/out_FHReport_01.txt");
+      
+      ATIO.Set_Output(out_FHReport_01);
       ATIO.Put_Line ("(=======================================================");
-      ATIO.Put_Line ("(LINE ACCOUNTING AND CLASSIFICATION SUMMARY");
-      ATIO.Put_Line ("(=======================================================");  
+      ATIO.Put_Line ("(1. LINE ACCOUNTING (pkg01 classify gcode lines)");
+      ATIO.Put_Line ("(======================================================="); 
+      ATIO.Put_Line ("(Curr File Input  = " & ASU.To_String(input_gcode_file));
+      ATIO.Put_Line ("(");
       ATIO.Put_Line ("(lineCount        = " & Integer'Image(lineCount));
       ATIO.Put_Line ("(max_lenUBlineStr = " & Natural'Image(max_lenUBlineStr));
       ATIO.Put_Line ("(lineBlank        = " & Integer'Image(lineBlank));
+      ATIO.Put_Line ("(lineControl      = " & Integer'Image(lineControl));
       ATIO.Put_Line ("(lineNotBlank     = " & Integer'Image(lineNotBlank));
       ATIO.Put_Line ("(lineTagged       = " & Integer'Image(lineTagged));
+      ATIO.Put_Line ("(");
       ATIO.Put_Line ("(Curr File Output = " & "files/out_gcode_file_01.txt");
       ATIO.Put ("("); PADTS.dtstamp; ATIO.Put_line("finished execution.)"); 
+      
+      ATIO.Close (out_FHReport_01);
+      PADTS.exec_delay_sec (2); -- Ensure finish file closing.
       
       ATIO.Set_Output(ATIO.Standard_Output);
       
    end exec_tag_blank_line;
    -- ====================================================
-  
 
 -- =======================================================   
 begin

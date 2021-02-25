@@ -10,7 +10,7 @@ RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U main_ada_process_ngc_gcodes%b  main_ada_process_ngc_gcodes.adb  3d9c37f4 NE OO SU IL
+U main_ada_process_ngc_gcodes%b  main_ada_process_ngc_gcodes.adb  684692a7 NE OO SU IL
 W ada%s			ada.ads			ada.ali
 W ada.real_time%s	a-reatim.adb		a-reatim.ali
 W ada.strings%s		a-string.ads		a-string.ali
@@ -44,7 +44,7 @@ D i-c.ads		20200312110721 5421119b interfaces.c%s
 D i-cstrea.ads		20200312110721 e53d8b8e interfaces.c_streams%s
 D main_ada_process_ngc_gcodes.adb  20210225111925 ada8244c main_ada_process_ngc_gcodes%b
 D pkg01_classify_gcode_lines.ads  20210225094023 d7505c26 pkg01_classify_gcode_lines%s
-D pkg02_remove_comment_lines.ads  20210225102701 7e3ee3fe pkg02_remove_comment_lines%s
+D pkg02_remove_comment_lines.ads  20210225124053 2be446ad pkg02_remove_comment_lines%s
 D pkg03_process_gcode_line.ads  20210225060613 d9e0c6ec pkg03_process_gcode_line%s
 D pkg_ada_dtstamp.ads	20210221081420 f15ab596 pkg_ada_dtstamp%s
 D pkg_ada_random.ads	20210221153352 03e92377 pkg_ada_random%s
@@ -111,7 +111,7 @@ X 19 pkg01_classify_gcode_lines.ads
 8K9*pkg01_classify_gcode_lines 18|18w6 40r28 19|22e31
 16U14*exec_classify_gcode_lines 18|65s9
 X 20 pkg02_remove_comment_lines.ads
-8K9*pkg02_remove_comment_lines 18|19w6 41r28 20|22e31
+8K9*pkg02_remove_comment_lines 18|19w6 41r28 20|23e31
 16U14*exec_remove_comment_lines 18|66s9
 X 21 pkg03_process_gcode_line.ads
 8K9*pkg03_process_gcode_line 18|20w6 42r28 21|22e29

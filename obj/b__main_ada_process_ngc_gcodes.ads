@@ -37,7 +37,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#3d9c37f4#;
+   u00001 : constant Version_32 := 16#684692a7#;
    pragma Export (C, u00001, "main_ada_process_ngc_gcodesB");
    u00002 : constant Version_32 := 16#050ff2f0#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -369,7 +369,7 @@ package ada_main is
    pragma Export (C, u00165, "system__file_ioS");
    u00166 : constant Version_32 := 16#bbaa76ac#;
    pragma Export (C, u00166, "system__file_control_blockS");
-   u00167 : constant Version_32 := 16#6b5ac145#;
+   u00167 : constant Version_32 := 16#02c63b20#;
    pragma Export (C, u00167, "pkg01_classify_gcode_linesB");
    u00168 : constant Version_32 := 16#5f4def7c#;
    pragma Export (C, u00168, "pkg01_classify_gcode_linesS");
@@ -447,9 +447,9 @@ package ada_main is
    pragma Export (C, u00204, "system__img_decB");
    u00205 : constant Version_32 := 16#e818e5df#;
    pragma Export (C, u00205, "system__img_decS");
-   u00206 : constant Version_32 := 16#cafc853b#;
+   u00206 : constant Version_32 := 16#b9fed8be#;
    pragma Export (C, u00206, "pkg02_remove_comment_linesB");
-   u00207 : constant Version_32 := 16#f62350a4#;
+   u00207 : constant Version_32 := 16#a3f9f5f7#;
    pragma Export (C, u00207, "pkg02_remove_comment_linesS");
    u00208 : constant Version_32 := 16#b932f69e#;
    pragma Export (C, u00208, "pkg03_process_gcode_lineB");
