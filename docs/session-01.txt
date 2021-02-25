@@ -1,0 +1,147 @@
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-ump$ date
+Thu 25 Feb 2021 01:51:47 PM +08
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-ump$ ls -al
+total 36
+drwxrwxr-x  9 wruslan wruslan 4096 Feb 25 11:18 .
+drwxr-xr-x 73 wruslan wruslan 4096 Feb 25 00:10 ..
+drwxrwxr-x  8 wruslan wruslan 4096 Feb 22 09:41 ada-date-time-rt-stamp
+drwxrwxr-x  8 wruslan wruslan 4096 Feb 22 22:32 ada-parallel-port
+drwxrwxr-x  8 wruslan wruslan 4096 Feb 22 12:31 ada-parallel-tasks
+drwxrwxr-x  9 wruslan wruslan 4096 Feb 25 11:47 ada-process-ngc-gcodes
+drwxrwxr-x  8 wruslan wruslan 4096 Feb 22 09:42 ada-random-numbers
+drwxrwxr-x  9 wruslan wruslan 4096 Feb 23 16:43 ada-read-write
+drwxrwxr-x  2 wruslan wruslan 4096 Feb 21 16:29 photos
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-ump$ 
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-ump$ cd ada-process-ngc-gcodes/
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-ump/ada-process-ngc-gcodes$ ls -al
+total 48
+drwxrwxr-x  9 wruslan wruslan 4096 Feb 25 11:47 .
+drwxrwxr-x  9 wruslan wruslan 4096 Feb 25 11:18 ..
+-rw-rw-r--  1 wruslan wruslan 4352 Feb 25 11:47 ada_process_ngc_gcodes.gpr
+drwxrwxr-x  3 wruslan wruslan 4096 Feb 25 11:43 docs
+drwxrwxr-x  2 wruslan wruslan 4096 Feb 25 14:09 exec
+drwxrwxr-x  2 wruslan wruslan 4096 Feb 25 11:44 figures
+drwxrwxr-x  2 wruslan wruslan 4096 Feb 25 13:44 files
+drwxrwxr-x  8 wruslan wruslan 4096 Feb 25 14:11 .git
+drwxrwxr-x  2 wruslan wruslan 4096 Feb 25 14:09 obj
+-rw-rw-r--  1 wruslan wruslan   66 Feb 25 11:18 README.md
+drwxrwxr-x 10 wruslan wruslan 4096 Feb 25 14:11 src
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-ump/ada-process-ngc-gcodes$ tree ./
+./
+├── ada_process_ngc_gcodes.gpr
+├── docs
+│   └── IMPORTANT-for-gcodes
+│       ├── main_ada_read_write.adb
+│       ├── m-codes-and-g-codes-in-NGC-file.txt
+│       └── to-clean-main_ada_read_write.adb
+├── exec
+│   └── main_ada_process_ngc_gcodes.adx
+├── figures
+├── files
+│   ├── bismillah.ngc
+│   ├── just-KSG.ngc
+│   └── write_bismillah.txt
+├── obj
+│   ├── ada_process_ngc_gcodes-loc.xml
+│   ├── b__main_ada_process_ngc_gcodes.adb
+│   ├── b__main_ada_process_ngc_gcodes.ads
+│   ├── b__main_ada_process_ngc_gcodes.ali
+│   ├── b__main_ada_process_ngc_gcodes.o
+│   ├── gpsauto.cgpr
+│   ├── main_ada_process_ngc_gcodes.adb.stderr
+│   ├── main_ada_process_ngc_gcodes.adb.stdout
+│   ├── main_ada_process_ngc_gcodes.ali
+│   ├── main_ada_process_ngc_gcodes.bexch
+│   ├── main_ada_process_ngc_gcodes.cswi
+│   ├── main_ada_process_ngc_gcodes.o
+│   ├── pkg01_classify_gcode_lines.adb.stderr
+│   ├── pkg01_classify_gcode_lines.adb.stdout
+│   ├── pkg01_classify_gcode_lines.ali
+│   ├── pkg01_classify_gcode_lines.cswi
+│   ├── pkg01_classify_gcode_lines.o
+│   ├── pkg02_remove_comment_lines.adb.stderr
+│   ├── pkg02_remove_comment_lines.adb.stdout
+│   ├── pkg02_remove_comment_lines.ali
+│   ├── pkg02_remove_comment_lines.cswi
+│   ├── pkg02_remove_comment_lines.o
+│   ├── pkg03_process_gcode_line.adb.stderr
+│   ├── pkg03_process_gcode_line.adb.stdout
+│   ├── pkg03_process_gcode_line.ali
+│   ├── pkg03_process_gcode_line.cswi
+│   ├── pkg03_process_gcode_line.o
+│   ├── pkg_ada_dtstamp.adb.stderr
+│   ├── pkg_ada_dtstamp.adb.stdout
+│   ├── pkg_ada_dtstamp.ali
+│   ├── pkg_ada_dtstamp.cswi
+│   ├── pkg_ada_dtstamp.o
+│   ├── pkg_ada_random.adb.stderr
+│   ├── pkg_ada_random.adb.stdout
+│   ├── pkg_ada_random.ali
+│   ├── pkg_ada_random.cswi
+│   ├── pkg_ada_random.o
+│   ├── pkg_ada_read_display_file.adb.stderr
+│   ├── pkg_ada_read_display_file.adb.stdout
+│   ├── pkg_ada_read_display_file.ali
+│   ├── pkg_ada_read_display_file.cswi
+│   ├── pkg_ada_read_display_file.o
+│   ├── pkg_ada_read_write_file.adb.stderr
+│   ├── pkg_ada_read_write_file.adb.stdout
+│   ├── pkg_ada_read_write_file.ali
+│   ├── pkg_ada_read_write_file.cswi
+│   ├── pkg_ada_read_write_file.o
+│   ├── pkg_ada_write_display_file.adb.stderr
+│   ├── pkg_ada_write_display_file.adb.stdout
+│   ├── pkg_ada_write_display_file.ali
+│   ├── pkg_ada_write_display_file.cswi
+│   └── pkg_ada_write_display_file.o
+├── README.md
+└── src
+    ├── main_ada_process_ngc_gcodes.adb
+    ├── pkg01-classify-gcode-lines
+    │   ├── pkg01_classify_gcode_lines.adb
+    │   └── pkg01_classify_gcode_lines.ads
+    ├── pkg02-remove-comment-lines
+    │   ├── pkg02_remove_comment_lines.adb
+    │   └── pkg02_remove_comment_lines.ads
+    ├── pkg03-process-gcode-line
+    │   ├── pkg03_process_gcode_line.adb
+    │   └── pkg03_process_gcode_line.ads
+    ├── pkg-ada-dtstamp
+    │   ├── pkg_ada_dtstamp.adb
+    │   └── pkg_ada_dtstamp.ads
+    ├── pkg-ada-random
+    │   ├── pkg_ada_random.adb
+    │   └── pkg_ada_random.ads
+    ├── pkg-ada-read-display-file
+    │   ├── pkg_ada_read_display_file.adb
+    │   └── pkg_ada_read_display_file.ads
+    ├── pkg-ada-read-write-file
+    │   ├── pkg_ada_read_write_file.adb
+    │   └── pkg_ada_read_write_file.ads
+    └── pkg-ada-write-display-file
+        ├── pkg_ada_write_display_file.adb
+        └── pkg_ada_write_display_file.ads
+
+15 directories, 78 files
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-ump/ada-process-ngc-gcodes$ 
+
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-ump/ada-process-ngc-gcodes$ exec/main_ada_process_ngc_gcodes.adx
+2021-02-25 06:15:15.36698652549 Bismillah 3 times WRY
+2021-02-25 06:15:15.36698676944 Running inside GNAT Studio Community
+
+Run exec_read_display_file (inp_fmode, inp_fname)
+inp_fmode = ATIO.In_File 
+inp_fname = files/bismillah.ngc
+Run exec_read_display_file (inp_fmode, inp_fname)
+inp_fmode = ATIO.In_File 
+inp_fname = files/bismillah.ngc
+Run exec_read_display_file (inp_fmode, inp_fname)
+inp_fmode = ATIO.In_File 
+inp_fname = files/bismillah.ngc
+
+2021-02-25 06:15:15.36698807602 Alhamdulillah 3 times WRY
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-ump/ada-process-ngc-gcodes$ 
+
+===========================================================
+
+

@@ -1,0 +1,33 @@
+[GENERATED OBJECT FILE]
+b__main_ada_process_ngc_gcodes.o
+[PROJECT FILES]
+/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr
+20210225034727
+[BOUND OBJECT FILES]
+/home/wruslan/github-ump/ada-process-ngc-gcodes/obj/pkg_ada_dtstamp.o
+/home/wruslan/github-ump/ada-process-ngc-gcodes/obj/pkg01_classify_gcode_lines.o
+/home/wruslan/github-ump/ada-process-ngc-gcodes/obj/pkg02_remove_comment_lines.o
+/home/wruslan/github-ump/ada-process-ngc-gcodes/obj/pkg03_process_gcode_line.o
+/home/wruslan/github-ump/ada-process-ngc-gcodes/obj/pkg_ada_random.o
+/home/wruslan/github-ump/ada-process-ngc-gcodes/obj/pkg_ada_read_display_file.o
+/home/wruslan/github-ump/ada-process-ngc-gcodes/obj/pkg_ada_read_write_file.o
+/home/wruslan/github-ump/ada-process-ngc-gcodes/obj/pkg_ada_write_display_file.o
+/home/wruslan/github-ump/ada-process-ngc-gcodes/obj/main_ada_process_ngc_gcodes.o
+[GENERATED SOURCE FILES]
+b__main_ada_process_ngc_gcodes.ads
+b__main_ada_process_ngc_gcodes.adb
+b__main_ada_process_ngc_gcodes.ali
+[RESULTING OPTIONS]
+-L/home/wruslan/github-ump/ada-process-ngc-gcodes/obj/
+-L/home/wruslan/github-ump/ada-process-ngc-gcodes/obj/
+-L/usr/lib/gcc/x86_64-linux-gnu/9/adalib/
+-shared
+-shared-libgcc
+-lgnarl-9
+-lgnat-9
+-lpthread
+-lrt
+-ldl
+[RUN PATH OPTION]
+/usr/lib/gcc/x86_64-linux-gnu/9/adalib/
+/usr/lib

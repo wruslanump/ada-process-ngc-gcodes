@@ -1,0 +1,45 @@
+ -- M-CODES REF: http://linuxcnc.org/docs/html/gcode/m-code.html
+   -- =====================================================
+   -- SPINDLE CONTROL CODES
+   -- M0 - pause a running program temporarily.
+   -- M1 - pause a running program temporarily if the optional stop switch is on. 
+   -- M2 - end the program.
+   -- M3 - start the spindle clockwise at the S speed. 
+   -- M4 - start the spindle counterclockwise at the S speed. 
+   -- M5 - stop the spindle.
+   
+   -- NORMAL SEQUENCE = (in bismillah.ngc)
+   -- M3 (start spindle) ... M5 (stop spindle) ... M2 (end program) 
+   
+   -- G-CODES REF: http://linuxcnc.org/docs/html/gcode/g-code.html
+   -- =====================================================
+   -- EXAMPLE G00
+   -- G00 X1 Y-2.3      
+   -- => (rapid linear move at current feedrate from current location to (X1, Y-2.3)
+   
+   -- EXAMPLE G01
+   -- G01 X1.2 Y-3.0 F10  
+   -- => (linear move at feedrate 10 from current position to (X1.2, Y-3.0)
+     
+   -- EXAMPLE G02
+   -- G02 X1 Y1 I2.0 F12 
+   -- ==> (clockwise arc move at feedrate 12 in the XY plane 
+   -- ==> from current position to (X1, Y1)
+   -- ==> with arc center (X1+2.0, Y1) . 
+   -- ==> Note I is x-offset.
+   
+   -- G02 X1 Y1 I2.0 J-3.4 F15 
+   -- ==> (clockwise arc move at feedrate 15 in the XY plane 
+   -- ==> from current position to (X1, Y1)
+   -- ==> with arc center at (X1+2.0, Y1-3.4) 
+   -- ==> Note I is X-offset and J is Y-offset.
+   
+   -- EXAMPLE G03
+   -- G03 X[21.717219*#10+#6] Y[116.468641*#10+#7] Z[1.000000*#11+#8] I[-2.133501*#10] J[-2.931844*#10]
+   
+   -- ==> (counter-clockwise arc move at current feedrate the XY plane 
+   -- ==> from current position to (X=21.717, Y=116.468, Z=1.000)
+   -- ==> with arc center at (currX-2.133, currY- 2.931, currZ) . 
+   -- Note I is X-offset, J is Y-offset and K is Z-offset.  
+   
+   

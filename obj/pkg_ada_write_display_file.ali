@@ -1,0 +1,158 @@
+V "GNAT Lib v9"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U pkg_ada_write_display_file%b  pkg_ada_write_display_file.adb  aa9c2383 OO PK IL
+W ada%s			ada.ads			ada.ali
+W ada.command_line%s	a-comlin.adb		a-comlin.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.bounded%s	a-strbou.adb		a-strbou.ali
+W ada.strings.fixed%s	a-strfix.adb		a-strfix.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+W ada.strings.unbounded.text_io%s  a-suteio.adb	a-suteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W pkg_ada_dtstamp%s	pkg_ada_dtstamp.adb	pkg_ada_dtstamp.ali
+W pkg_ada_random%s	pkg_ada_random.adb	pkg_ada_random.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+Z system.img_real%s	s-imgrea.adb		s-imgrea.ali
+
+U pkg_ada_write_display_file%s  pkg_ada_write_display_file.ads  2494e622 EE NE OO PK IL
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+D ada.ads		20200312110721 76789da1 ada%s
+D a-charac.ads		20200312110721 2d3ec45b ada.characters%s
+D a-chlat1.ads		20200312110721 66457d31 ada.characters.latin_1%s
+D a-comlin.ads		20200312110721 4aa66568 ada.command_line%s
+D a-except.ads		20200312110721 291912d5 ada.exceptions%s
+D a-finali.ads		20200312110721 bf4f806b ada.finalization%s
+D a-ioexce.ads		20200312110721 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20200312110721 bb51c45a ada.numerics%s
+D a-reatim.ads		20200312110721 0240fc73 ada.real_time%s
+D a-stream.ads		20200312110721 119b8fb3 ada.streams%s
+D a-string.ads		20200312110721 90ac6797 ada.strings%s
+D a-strbou.ads		20200312110721 53ab54ae ada.strings.bounded%s
+D a-strfix.ads		20200312110721 d07c346e ada.strings.fixed%s
+D a-strmap.ads		20200312110721 e8bb714a ada.strings.maps%s
+D a-strsup.ads		20200312110721 a27dcb33 ada.strings.superbounded%s
+D a-strunb.ads		20200312110721 8098c91f ada.strings.unbounded%s
+D a-suteio.ads		20200312110721 26d8e9aa ada.strings.unbounded.text_io%s
+D a-tags.ads		20200312110721 491b781d ada.tags%s
+D a-textio.ads		20200312110721 881db35a ada.text_io%s
+D a-unccon.ads		20200312110721 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20200312110721 5ab55268 interfaces%s
+D i-c.ads		20200312110721 5421119b interfaces.c%s
+D i-cstrea.ads		20200312110721 e53d8b8e interfaces.c_streams%s
+D pkg_ada_dtstamp.ads	20210221081420 f15ab596 pkg_ada_dtstamp%s
+D pkg_ada_random.ads	20210221153352 03e92377 pkg_ada_random%s
+D pkg_ada_write_display_file.ads  20210225020241 ac895578 pkg_ada_write_display_file%s
+D pkg_ada_write_display_file.adb  20210225030953 3877d590 pkg_ada_write_display_file%b
+D system.ads		20200312110721 4635ec04 system%s
+D s-atacco.ads		20200312110721 4c36d12f system.address_to_access_conversions%s
+D s-atocou.ads		20200312110721 b45c2d8d system.atomic_counters%s
+D s-conca2.ads		20200312110721 02a0d7d0 system.concat_2%s
+D s-conca3.ads		20200312110721 0b705ca5 system.concat_3%s
+D s-crtl.ads		20200312110721 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200312110721 54135002 system.exception_table%s
+D s-ficobl.ads		20200312110721 078245e4 system.file_control_block%s
+D s-finmas.ads		20200312110721 7811a767 system.finalization_masters%s
+D s-finroo.ads		20200312110721 4ff27390 system.finalization_root%s
+D s-imgint.ads		20200312110721 02dbe0c2 system.img_int%s
+D s-imgrea.ads		20200312110721 c7a851e2 system.img_real%s
+D s-linux.ads		20200312110721 ed0b8aee system.linux%s
+D s-multip.ads		20200312110721 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20200808120453 0b994636 system.os_constants%s
+D s-osinte.ads		20200312110721 710cf8c6 system.os_interface%s
+D s-parame.ads		20200312110721 48ec542b system.parameters%s
+D s-secsta.ads		20200312110721 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20200312110721 a7318a92 system.soft_links%s
+D s-stache.ads		20200312110721 a37c21ec system.stack_checking%s
+D s-stausa.ads		20200312110721 017a0a05 system.stack_usage%s
+D s-stalib.ads		20200312110721 09bd3940 system.standard_library%s
+D s-stoele.ads		20200312110721 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20200312110721 b16154c2 system.storage_pools%s
+D s-stposu.ads		20200312110721 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20200312110721 aedef97e system.stream_attributes%s
+D s-tasinf.ads		20200312110721 2b3f8252 system.task_info%s
+D s-taspri.ads		20200312110721 f40ac08d system.task_primitives%s
+D s-taprop.ads		20200312110721 1dd2e1b6 system.task_primitives.operations%s
+D s-taskin.ads		20200312110721 b9d612e2 system.tasking%s
+D s-traent.ads		20200312110721 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200312110721 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20200312110721 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 26|7r6 16r26 27|9r6 10r6 14r6 15r6 16r6 17r6 18r6 19r6 32r25
+. 33r25
+X 4 a-comlin.ads
+36K13*Command_Line 144e21 27|19w10
+X 8 a-numeri.ads
+16K13*Numerics 32e17 27|10w10
+X 11 a-string.ads
+16K13*Strings 35e16 27|14w10 15r10 16r10 17r10 18r10 33r29
+X 12 a-strbou.ads
+39K21*Bounded 914e24 27|16w18
+X 13 a-strfix.ads
+18K21*Fixed 251e22 27|15w18
+X 16 a-strunb.ads
+76K21*Unbounded 491e26 27|17w18 18r18 33r37
+X 17 a-suteio.ads
+39K31*Text_IO 61e34 27|18w28
+X 19 a-textio.ads
+49K13*Text_IO 471e16 26|7w10 16r30 27|9w10 32r29
+52P9*File_Type 27|39r23
+53E9*File_Mode 53e54 26|21r60 27|49r60
+86U14*Create 27|59s12
+98U14*Close 27|100s12
+114U14*Set_Output 27|76s15 87s15 98s12
+118V13*Standard_Output{52P9} 27|76s31 98s28
+166U14*New_Line 27|61s12 84s15 95s15
+242U14*Put 27|77s15 78s15 79s15 80s15 81s15 82s15 83s15 88s15 89s15 90s15
+. 91s15 92s15 93s15 94s15
+263U14*Put_Line 27|54s12 55s12 56s12 58s12 60s12 112s12
+X 24 pkg_ada_dtstamp.ads
+10K9*pkg_ada_dtstamp 31e20 27|23w6 35r26
+22U14*exec_delay_sec 27|101s13
+X 25 pkg_ada_random.ads
+3K9*pkg_ada_random 14e19 27|24w6 36r26
+10V13*get_random_integer{integer} 27|67s29 68s29 69s29
+11V13*get_random_float{float} 27|71s29 72s29 73s29
+X 26 pkg_ada_write_display_file.ads
+10K9*pkg_ada_write_display_file 27l5 27e31 27|27b14 120l5 120t31
+16K12*AATIO=16:30 21r54 27|49r54
+19U14*about_pkg_ada_write_display_file 27|107b14 114l8 114t40
+21U14*exec_write_display_file 21>39 21>71 27|49b14 104l8 104t31
+21e39 out_fmode{19|53E9} 27|49b39 59r33
+21a71 out_fname{string} 27|49b71 56r39 58r47 59r44 60r47
+X 27 pkg_ada_write_display_file.adb
+32K12 ATIO=32:29 39r18 54r7 55r7 56r7 58r7 59r7 60r7 61r7 76r10 76r26 77r10
+. 78r10 79r10 80r10 81r10 82r10 83r10 84r10 87r10 88r10 89r10 90r10 91r10
+. 92r10 93r10 94r10 95r10 98r7 98r23 100r7 112r7
+33K12 ASU=33:37
+35K12 PADTS=35:26 101r7
+36K12 PAR=36:26 67r25 68r25 69r25 71r25 72r25 73r25
+39p4 out_fhandle{19|52P9} 59m20 59r20 87r26 100m18 100r18
+41i4 rand_int1{integer} 67m10 78r34 89r34
+42f4 rand_float1{float} 71m10 81r32 92r32
+43i4 rand_int2{integer} 68m10 79r34 90r34
+44f4 rand_float2{float} 72m10 82r32 93r32
+45i4 rand_int3{integer} 69m10 80r34 91r34
+46f4 rand_float3{float} 73m10 83r32 94r32
+64i11 line_num{integer} 77r47 88r47
+X 48 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+
