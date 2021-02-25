@@ -5,25 +5,37 @@ A -march=x86-64
 P ZX
 
 RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
 RV NO_IO
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
+RV SPARK_05
 
-U pkg02_remove_comment_lines%b  pkg02_remove_comment_lines.adb  bbcd277b OO PK IL
+U pkg02_remove_comment_lines%b  pkg02_remove_comment_lines.adb  cafc853b OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.command_line%s	a-comlin.adb		a-comlin.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
 W ada.numerics%s	a-numeri.ads		a-numeri.ali
 W ada.strings%s		a-string.ads		a-string.ali
 W ada.strings.bounded%s	a-strbou.adb		a-strbou.ali
 W ada.strings.fixed%s	a-strfix.adb		a-strfix.ali
 W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
 W ada.strings.unbounded.text_io%s  a-suteio.adb	a-suteio.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W pkg_ada_dtstamp%s	pkg_ada_dtstamp.adb	pkg_ada_dtstamp.ali
 Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
 
-U pkg02_remove_comment_lines%s  pkg02_remove_comment_lines.ads  019f1c00 EE NE OO PK IL
+U pkg02_remove_comment_lines%s  pkg02_remove_comment_lines.ads  f62350a4 EE NE OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 
@@ -50,8 +62,8 @@ D a-unccon.ads		20200312110721 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20200312110721 5ab55268 interfaces%s
 D i-c.ads		20200312110721 5421119b interfaces.c%s
 D i-cstrea.ads		20200312110721 e53d8b8e interfaces.c_streams%s
-D pkg02_remove_comment_lines.ads  20210225060653 8982af5a pkg02_remove_comment_lines%s
-D pkg02_remove_comment_lines.adb  20210225055356 0fc4083d pkg02_remove_comment_lines%b
+D pkg02_remove_comment_lines.ads  20210225102701 7e3ee3fe pkg02_remove_comment_lines%s
+D pkg02_remove_comment_lines.adb  20210225112130 8949e6d9 pkg02_remove_comment_lines%b
 D pkg_ada_dtstamp.ads	20210221081420 f15ab596 pkg_ada_dtstamp%s
 D system.ads		20200312110721 4635ec04 system%s
 D s-atacco.ads		20200312110721 4c36d12f system.address_to_access_conversions%s
@@ -62,7 +74,9 @@ D s-exctab.ads		20200312110721 54135002 system.exception_table%s
 D s-ficobl.ads		20200312110721 078245e4 system.file_control_block%s
 D s-finmas.ads		20200312110721 7811a767 system.finalization_masters%s
 D s-finroo.ads		20200312110721 4ff27390 system.finalization_root%s
+D s-imgint.ads		20200312110721 02dbe0c2 system.img_int%s
 D s-linux.ads		20200312110721 ed0b8aee system.linux%s
+D s-memory.ads		20200312110721 597d6634 system.memory%s
 D s-multip.ads		20200312110721 38ac9f73 system.multiprocessors%s
 D s-oscons.ads		20200808120453 0b994636 system.os_constants%s
 D s-osinte.ads		20200312110721 710cf8c6 system.os_interface%s
@@ -72,6 +86,7 @@ D s-soflin.ads		20200312110721 a7318a92 system.soft_links%s
 D s-stache.ads		20200312110721 a37c21ec system.stack_checking%s
 D s-stausa.ads		20200312110721 017a0a05 system.stack_usage%s
 D s-stalib.ads		20200312110721 09bd3940 system.standard_library%s
+D s-stalib.adb		20200312110721 f2fe2716 system.standard_library%b
 D s-stoele.ads		20200312110721 2dc34a04 system.storage_elements%s
 D s-stopoo.ads		20200312110721 b16154c2 system.storage_pools%s
 D s-stposu.ads		20200312110721 97a6219c system.storage_pools.subpools%s
@@ -98,24 +113,61 @@ X 13 a-strfix.ads
 18K21*Fixed 251e22 25|14w18
 X 16 a-strunb.ads
 76K21*Unbounded 491e26 25|16w18 17r18 32r37
+79R9*Unbounded_String<6|43R9> 474e14 25|38r28
+94V13*To_Unbounded_String{79R9} 25|79s31
+100V13*To_String{string} 25|82s29 92s45
+153V13*Unbounded_Slice{79R9} 25|82s44
 X 17 a-suteio.ads
 39K31*Text_IO 61e34 25|17w28
 X 19 a-textio.ads
 49K13*Text_IO 471e16 24|5w10 13r30 25|7w10 31r29
-53E9*File_Mode 53e54 24|16r59 25|36r60
-263U14*Put_Line 25|42s12 43s12 44s12
+52P9*File_Type 25|35r36
+53n23*In_File{53E9} 25|55r38
+53n32*Out_File{53E9} 25|56r38
+86U14*Create 25|56s12
+92U14*Open 25|55s12
+98U14*Close 25|60s12 61s12
+114U14*Set_Output 25|98s12
+118V13*Standard_Output{52P9} 25|98s28
+166U14*New_Line 25|50s12 53s12
+183V13*End_Of_File{boolean} 25|78s22
+242U14*Put 25|106s12
+253V13*Get_Line{string} 25|79s56
+259U14*Put_Line 25|92s18
+263U14*Put_Line 25|51s12 52s12 99s12 100s12 101s12 102s12 103s12 104s12 105s12
+. 106s43
 X 24 pkg02_remove_comment_lines.ads
-8K9*pkg02_remove_comment_lines 22l5 22e31 25|26b14 57l5 57t31
-13K12*SATIO=13:30 16r53
-16U14*exec_read_display_file 16>38 16>70 25|36b14 47l8 47t30
-16e38 inp_fmode{19|53E9} 25|36b38
-16a70 inp_fname{string} 25|36b71 44r39
+8K9*pkg02_remove_comment_lines 22l5 22e31 25|26b14 116l5 116t31
+13K12*SATIO=13:30
+16U14*exec_remove_comment_lines 16>40 25|44b14 64l8 64t33
+16a40 inp_fname{string} 25|44b40 52r39 55r48
+17U14*exec_remove_comment_and_blank_lines 25|58s7 67b14 109l8 109t43
 X 25 pkg02_remove_comment_lines.adb
-31K12 ATIO=31:29 36r55 42r7 43r7 44r7
-32K12 ASU=32:37
+31K12 ATIO=31:29 35r31 50r7 51r7 52r7 53r7 55r7 55r33 56r7 56r33 60r7 61r7
+. 78r17 79r51 92r13 98r7 98r23 99r7 100r7 101r7 102r7 103r7 104r7 105r7 106r7
+. 106r38
+32K12 ASU=32:37 38r24 79r27 82r25 82r40 92r41
+33K12 PADTS=33:26 62r7 106r23
+35p4 inp_fhandle{19|52P9} 55m20 55r20 60m19 60r19 78r35 79r66
+35p17 out_fhandle{19|52P9} 56m20 56r20 61m19 61r19 92r28
+37i4 lineCount{integer} 74m7 80m10 80r23 102r60
+38r4 inp_UBlineStr{16|79R9} 79m10 82r60 92r56
+39a4 firstChar{string} 82m10 85r14
+40i4 lineRemoved{integer} 75m7 86m13 86r28 103r60
+41i4 lineRemaining{integer} 76m7 90m13 90r31 104r60
 X 26 pkg_ada_dtstamp.ads
-10K9*pkg_ada_dtstamp 25|21w6 26|31e20
-X 44 s-stausa.ads
+10K9*pkg_ada_dtstamp 25|21w6 33r26 26|31e20
+17U14*dtstamp 25|106s29
+22U14*exec_delay_sec 25|62s13
+X 27 system.ads
+67M9*Address
+X 38 s-memory.ads
+53V13*Alloc{27|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{27|67M9} 105i<c,__gnat_realloc>22
+X 46 s-stausa.ads
 203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
 268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+X 48 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
 

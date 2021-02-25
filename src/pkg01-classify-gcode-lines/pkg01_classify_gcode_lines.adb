@@ -50,7 +50,7 @@ is
    lineNotBlank : Integer := 0;
    lineComment  : Integer := 0;
    
-   firstChar       : String  := "1";
+   
    first3Chars     : String  := "123"; --DUMMY
    
    countG    : Integer := 0;
@@ -73,7 +73,8 @@ is
       ATIO.New_Line;
       
       ATIO.Open   (inp_fhandle, ATIO.In_File,  inp_gcode_file);
-      ATIO.Create (out_fhandle, ATIO.Out_File, "files/out_gcode_file01.txt");
+      ATIO.Create (out_fhandle, ATIO.Out_File, "files/out_gcode_file_01.txt");
+      
       exec_tag_blank_line;  -- Call internal procedure
       
       ATIO.Close (inp_fhandle);
@@ -114,23 +115,20 @@ is
          inp_UBlineStr := ASU.To_Unbounded_String(ATIO.Get_Line (inp_fhandle));
          
          lineCount    := lineCount + 1;
+         
          curr_lenUBlineStr := ASU.Length (inp_UBlineStr);
          if curr_lenUBlineStr > max_lenUBlineStr then 
             max_lenUBlineStr := curr_lenUBlineStr;
          end if;  
          
-         if curr_lenUBlineStr = 0 then
+         if (curr_lenUBlineStr) = 0 then
             lineBlank := lineBlank + 1;
-            
-            -- Write line to terminal
-            ATIO.Put_Line ("(Blank Line) LINETAG" & Integer'Image(lineCount));
-            -- Write line to output file
-            ATIO.Put_Line (out_fhandle, "(Blank Line) LINETAG" & Integer'Image(lineCount));
+            -- ATIO.Put_Line ("(Blank Line) LINETAG" & Integer'Image(lineCount));
+             ATIO.Put_Line (out_fhandle, "(Blank Line) LINETAG" & Integer'Image(lineCount));
+         
          else 
             lineNotBlank := lineNotBlank + 1; 
-            -- Write line to terminal
-            ATIO.Put_Line (ASU.To_String (inp_UBlineStr)); 
-            -- Write line to output file
+            -- ATIO.Put_Line (ASU.To_String (inp_UBlineStr)); 
             ATIO.Put_Line (out_fhandle, ASU.To_String (inp_UBlineStr)); 
                  
          end if;   
@@ -148,18 +146,20 @@ is
       ATIO.Put_Line ("lineBlank        = " & Integer'Image(lineBlank));
       ATIO.Put_Line ("lineNotBlank     = " & Integer'Image(lineNotBlank));
       ATIO.Put_Line ("lineTagged       = " & Integer'Image(lineTagged));
-      ATIO.Put_Line ("Curr File Output = " & "files/out_gcode_file01.txt");
+      ATIO.Put_Line ("Curr File Output = " & "files/out_gcode_file_01.txt");
+      ATIO.Put ("("); PADTS.dtstamp; ATIO.Put_line("finished execution.)"); 
       
       ATIO.Set_Output(out_fhandle);
-      ATIO.Put_Line ("=======================================================");
-      ATIO.Put_Line ("LINE ACCOUNTING AND CLASSIFICATION SUMMARY");
-      ATIO.Put_Line ("=======================================================");  
-      ATIO.Put_Line ("lineCount        = " & Integer'Image(lineCount));
-      ATIO.Put_Line ("max_lenUBlineStr = " & Natural'Image(max_lenUBlineStr));
-      ATIO.Put_Line ("lineBlank        = " & Integer'Image(lineBlank));
-      ATIO.Put_Line ("lineNotBlank     = " & Integer'Image(lineNotBlank));
-      ATIO.Put_Line ("lineTagged       = " & Integer'Image(lineTagged));
-      ATIO.Put_Line ("Curr File Output = " & "files/out_gcode_file01.txt");
+      ATIO.Put_Line ("(=======================================================");
+      ATIO.Put_Line ("(LINE ACCOUNTING AND CLASSIFICATION SUMMARY");
+      ATIO.Put_Line ("(=======================================================");  
+      ATIO.Put_Line ("(lineCount        = " & Integer'Image(lineCount));
+      ATIO.Put_Line ("(max_lenUBlineStr = " & Natural'Image(max_lenUBlineStr));
+      ATIO.Put_Line ("(lineBlank        = " & Integer'Image(lineBlank));
+      ATIO.Put_Line ("(lineNotBlank     = " & Integer'Image(lineNotBlank));
+      ATIO.Put_Line ("(lineTagged       = " & Integer'Image(lineTagged));
+      ATIO.Put_Line ("(Curr File Output = " & "files/out_gcode_file_01.txt");
+      ATIO.Put ("("); PADTS.dtstamp; ATIO.Put_line("finished execution.)"); 
       
       ATIO.Set_Output(ATIO.Standard_Output);
       

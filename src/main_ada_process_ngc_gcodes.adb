@@ -63,7 +63,7 @@ begin
    -- PPGL.exec_read_display_file (inp_fmode, inp_fname);  
    
    PCGL.exec_classify_gcode_lines(inp_gcode_file1);
-   -- PRCL.exec_remove_comment_lines("files/out_gcode_file01.txt");
+   PRCL.exec_remove_comment_lines("files/out_gcode_file_01.txt");
    
    -- =====================================================
             

@@ -326,12 +326,13 @@ M2
 (Using default footer. To add your own footer create file "footer" in the output dir.)
 (end)
 %
-=======================================================
-LINE ACCOUNTING AND CLASSIFICATION SUMMARY
-=======================================================
-lineCount        =  328
-max_lenUBlineStr =  99
-lineBlank        =  62
-lineNotBlank     =  266
-lineTagged       =  328
-Curr File Output = files/out_gcode_file01.txt
+(=======================================================
+(LINE ACCOUNTING AND CLASSIFICATION SUMMARY
+(=======================================================
+(lineCount        =  328
+(max_lenUBlineStr =  99
+(lineBlank        =  62
+(lineNotBlank     =  266
+(lineTagged       =  328
+(Curr File Output = files/out_gcode_file_01.txt
+(2021-02-25 12:25:04.78256662681 finished execution.)
