@@ -1,0 +1,38 @@
+/home/wruslan/github-ump/ada-process-ngc-gcodes/exec/main_ada_process_ngc_gcodes.adx
+2021-02-27 14:09:36.71782277585 Bismillah 3 times WRY
+2021-02-27 14:09:36.71782334022 Running inside GNAT Studio Community
+
+Start PSGTN.exec10_standardize_gcode_to_ngc (files/bismillah.ngc)
+=====================================================
+PSGTN internal: exec11_replace_uppercase_all_chars (input, output):
+input  = files/bismillah.ngc
+output = files/out_gcode_file_11.txt
+
+2021-02-27 14:09:36.71782463680 Executing exec11 ...
+Opened input file : files/bismillah.ngc successfully.
+Opened output file: files/out_gcode_file_11.txt duccessfully.
+PROCESSING ...
+Close input  file : files/bismillah.ngc successfully.
+Close output file : files/out_gcode_file_11.txt successfully.
+2021-02-27 14:09:37.71783766313 Completed exec11.
+
+=====================================================
+PSGTN internal: exec12_remove_whitespace_each_line (input, output):
+input  = files/out_gcode_file_11.txt
+output = files/out_gcode_file_12.txt
+
+2021-02-27 14:09:37.71783841470 Executing exec12 ...
+Opened input file : files/out_gcode_file_11.txt successfully.
+Opened output file: files/out_gcode_file_12.txt duccessfully.
+PROCESSING ...
+Close input  file : files/out_gcode_file_11.txt successfully.
+Close output file : files/out_gcode_file_12.txt successfully.
+2021-02-27 14:09:38.71784866971 Completed exec12.
+
+End PSGTN.exec10_standardize_gcode_to_ngc (files/bismillah.ngc)
+=====================================================
+
+
+2021-02-27 14:09:38.71784957678 Alhamdulillah 3 times WRY
+[2021-02-27 22:09:38] process terminated successfully, elapsed time: 02.22s
+

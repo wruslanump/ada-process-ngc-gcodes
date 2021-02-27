@@ -1,4 +1,4 @@
--- File   : pkg01_classify_each_gcode_line.adb
+-- File   : pkg20_classify_each_gcode_line.adb
 -- Date   : Thu 25 Feb 2021 01:51:47 PM +08
 -- Author : WRY wruslandr@gmail.com
 -- ========================================================
@@ -23,7 +23,7 @@ with Ada.Command_Line;
 with pkg_ada_dtstamp;
 
 -- ========================================================
-package body pkg01_classify_each_gcode_line
+package body pkg20_classify_each_gcode_line
 -- ========================================================
 --   with SPARK_Mode => on
 is
@@ -31,6 +31,10 @@ is
    package ATIO  renames Ada.Text_IO;
    package ASU   renames Ada.Strings.Unbounded;
    package PADTS renames pkg_ada_dtstamp;
+   
+   -- PACKAGE-WIDE VARIABLES
+   inp_UBfname :  ASU.Unbounded_String;
+      
    
    input_gcode_file  : ASU.Unbounded_String; 
    inp_fhandle : ATIO.File_Type; 
@@ -54,7 +58,7 @@ is
    lineComment  : Integer := 0;
    
    -- =====================================================
-   procedure exec_classify_each_gcode_line (inp_gcode_file : in String)
+   procedure exec20_classify_each_gcode_line (inp_gcode_file : in String)
    -- =====================================================
    -- with SPARK_Mode => on
    is
@@ -74,7 +78,7 @@ is
       ATIO.Close (out_fhandle);
       PADTS.exec_delay_sec (2); -- Ensure finish file closing.
            
-   end exec_classify_each_gcode_line;
+   end exec20_classify_each_gcode_line;
    
    -- =====================================================
    procedure exec_scan_tag_blank_line
@@ -172,5 +176,5 @@ is
 begin
   null;
 -- ========================================================
-end pkg01_classify_each_gcode_line;
+end pkg20_classify_each_gcode_line;
 -- ========================================================    

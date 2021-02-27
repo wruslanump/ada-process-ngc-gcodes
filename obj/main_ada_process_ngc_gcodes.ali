@@ -10,16 +10,16 @@ RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U main_ada_process_ngc_gcodes%b  main_ada_process_ngc_gcodes.adb  9d83fe53 NE OO SU IL
+U main_ada_process_ngc_gcodes%b  main_ada_process_ngc_gcodes.adb  07d4a451 NE OO SU IL
 W ada%s			ada.ads			ada.ali
 W ada.real_time%s	a-reatim.adb		a-reatim.ali
 W ada.strings%s		a-string.ads		a-string.ali
 W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
-W pkg00_standardize_gcode_to_ngc%s  pkg00_standardize_gcode_to_ngc.adb  pkg00_standardize_gcode_to_ngc.ali
-W pkg01_classify_each_gcode_line%s  pkg01_classify_each_gcode_line.adb  pkg01_classify_each_gcode_line.ali
 W pkg02_remove_comment_blank_lines%s  pkg02_remove_comment_blank_lines.adb  pkg02_remove_comment_blank_lines.ali
 W pkg03_format_each_gcode_line%s  pkg03_format_each_gcode_line.adb  pkg03_format_each_gcode_line.ali
+W pkg10_standardize_gcode_to_ngc%s  pkg10_standardize_gcode_to_ngc.adb  pkg10_standardize_gcode_to_ngc.ali
+W pkg20_classify_each_gcode_line%s  pkg20_classify_each_gcode_line.adb  pkg20_classify_each_gcode_line.ali
 W pkg_ada_dtstamp%s	pkg_ada_dtstamp.adb	pkg_ada_dtstamp.ali
 W pkg_ada_random%s	pkg_ada_random.adb	pkg_ada_random.ali
 W pkg_ada_read_display_file%s  pkg_ada_read_display_file.adb  pkg_ada_read_display_file.ali
@@ -43,11 +43,11 @@ D a-unccon.ads		20200312110721 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20200312110721 5ab55268 interfaces%s
 D i-c.ads		20200312110721 5421119b interfaces.c%s
 D i-cstrea.ads		20200312110721 e53d8b8e interfaces.c_streams%s
-D main_ada_process_ngc_gcodes.adb  20210227100652 f674ed08 main_ada_process_ngc_gcodes%b
-D pkg00_standardize_gcode_to_ngc.ads  20210227103452 7ccbc582 pkg00_standardize_gcode_to_ngc%s
-D pkg01_classify_each_gcode_line.ads  20210227004713 e30dde2b pkg01_classify_each_gcode_line%s
+D main_ada_process_ngc_gcodes.adb  20210227163606 e6ee2509 main_ada_process_ngc_gcodes%b
 D pkg02_remove_comment_blank_lines.ads  20210227012344 4130c3d6 pkg02_remove_comment_blank_lines%s
 D pkg03_format_each_gcode_line.ads  20210227094948 55bba1a8 pkg03_format_each_gcode_line%s
+D pkg10_standardize_gcode_to_ngc.ads  20210227114622 e4dc26c3 pkg10_standardize_gcode_to_ngc%s
+D pkg20_classify_each_gcode_line.ads  20210227131302 f1d7af69 pkg20_classify_each_gcode_line%s
 D pkg_ada_dtstamp.ads	20210221081420 f15ab596 pkg_ada_dtstamp%s
 D pkg_ada_random.ads	20210221153352 03e92377 pkg_ada_random%s
 D pkg_ada_read_display_file.ads  20210224142930 f2708e61 pkg_ada_read_display_file%s
@@ -92,40 +92,41 @@ X 11 a-strunb.ads
 76K21*Unbounded 491e26 18|9w18 9r45 32r40
 X 13 a-textio.ads
 49K13*Text_IO 471e16 18|7w10 30r32
-166U14*New_Line 18|65s9 86s9
-263U14*Put_Line 18|63s24 64s24 86s39
+166U14*New_Line 18|65s9 84s9
+263U14*Put_Line 18|63s24 64s24 84s39
 X 18 main_ada_process_ngc_gcodes.adb
-24U11*main_ada_process_ngc_gcodes 24b11 88l5 88t32
-30K12 ATIO=30:32 63r19 64r19 65r4 86r4 86r34
+24U11*main_ada_process_ngc_gcodes 24b11 86l5 86t32
+30K12 ATIO=30:32 63r19 64r19 65r4 84r4 84r34
 31K12 ART=31:32
 32K12 ASU=32:40
-35K12 PADTS=35:28 63r4 64r4 86r19
-41K12 PSGTN=41:29 68r4
+35K12 PADTS=35:28 63r4 64r4 84r19
+38K12 PARWF=38:28
+41K12 PSGTN=41:29 70r4
 42K12 PCEGL=42:29
 43K12 PRCBL=43:29
 44K12 PFEGL=44:29
-55a4 inp_gcode_file_01{string} 68r41
+55a4 inp_gcode_file_01{string} 70r43
 56a4 inp_gcode_file_02{string}
 57a4 inp_gcode_file_03{string}
 58a4 inp_gcode_file_04{string}
-X 19 pkg00_standardize_gcode_to_ngc.ads
-9K9*pkg00_standardize_gcode_to_ngc 18|18w6 41r29 19|25e35
-18U14*exec_standardize_gcode_to_ngc 18|68s10
-X 20 pkg01_classify_each_gcode_line.ads
-8K9*pkg01_classify_each_gcode_line 18|19w6 42r29 20|22e35
-X 21 pkg02_remove_comment_blank_lines.ads
-8K9*pkg02_remove_comment_blank_lines 18|20w6 43r29 21|23e37
-X 22 pkg03_format_each_gcode_line.ads
-7K9*pkg03_format_each_gcode_line 18|21w6 44r29 22|21e33
+X 19 pkg02_remove_comment_blank_lines.ads
+8K9*pkg02_remove_comment_blank_lines 18|20w6 43r29 19|23e37
+X 20 pkg03_format_each_gcode_line.ads
+7K9*pkg03_format_each_gcode_line 18|21w6 44r29 20|21e33
+X 21 pkg10_standardize_gcode_to_ngc.ads
+9K9*pkg10_standardize_gcode_to_ngc 18|18w6 41r29 21|25e35
+18U14*exec10_standardize_gcode_to_ngc 18|70s10
+X 22 pkg20_classify_each_gcode_line.ads
+8K9*pkg20_classify_each_gcode_line 18|19w6 42r29 22|22e35
 X 23 pkg_ada_dtstamp.ads
 10K9*pkg_ada_dtstamp 18|12w6 35r28 23|31e20
-17U14*dtstamp 18|63s10 64s10 86s25
+17U14*dtstamp 18|63s10 64s10 84s25
 X 24 pkg_ada_random.ads
 3K9*pkg_ada_random 18|13w6 24|14e19
 X 25 pkg_ada_read_display_file.ads
 10K9*pkg_ada_read_display_file 18|14w6 25|24e30
 X 26 pkg_ada_read_write_file.ads
-10K9*pkg_ada_read_write_file 18|15w6 26|25e28
+10K9*pkg_ada_read_write_file 18|15w6 38r28 26|25e28
 X 27 pkg_ada_write_display_file.ads
 10K9*pkg_ada_write_display_file 18|16w6 27|27e31
 X 44 s-stausa.ads

@@ -21,7 +21,7 @@ package body ada_main is
    E081 : Short_Integer; pragma Import (Ada, E081, "system__object_reader_E");
    E050 : Short_Integer; pragma Import (Ada, E050, "system__dwarf_lines_E");
    E039 : Short_Integer; pragma Import (Ada, E039, "system__traceback__symbolic_E");
-   E207 : Short_Integer; pragma Import (Ada, E207, "ada__numerics_E");
+   E211 : Short_Integer; pragma Import (Ada, E211, "ada__numerics_E");
    E132 : Short_Integer; pragma Import (Ada, E132, "ada__tags_E");
    E149 : Short_Integer; pragma Import (Ada, E149, "ada__streams_E");
    E166 : Short_Integer; pragma Import (Ada, E166, "system__file_control_block_E");
@@ -38,15 +38,15 @@ package body ada_main is
    E176 : Short_Integer; pragma Import (Ada, E176, "ada__calendar__time_zones_E");
    E006 : Short_Integer; pragma Import (Ada, E006, "ada__real_time_E");
    E161 : Short_Integer; pragma Import (Ada, E161, "ada__text_io_E");
-   E223 : Short_Integer; pragma Import (Ada, E223, "system__random_seed_E");
+   E225 : Short_Integer; pragma Import (Ada, E225, "system__random_seed_E");
    E170 : Short_Integer; pragma Import (Ada, E170, "pkg_ada_dtstamp_E");
-   E168 : Short_Integer; pragma Import (Ada, E168, "pkg00_standardize_gcode_to_ngc_E");
-   E206 : Short_Integer; pragma Import (Ada, E206, "pkg01_classify_each_gcode_line_E");
-   E209 : Short_Integer; pragma Import (Ada, E209, "pkg02_remove_comment_blank_lines_E");
-   E215 : Short_Integer; pragma Import (Ada, E215, "pkg03_format_each_gcode_line_E");
-   E217 : Short_Integer; pragma Import (Ada, E217, "pkg_ada_random_E");
-   E229 : Short_Integer; pragma Import (Ada, E229, "pkg_ada_read_display_file_E");
-   E231 : Short_Integer; pragma Import (Ada, E231, "pkg_ada_read_write_file_E");
+   E168 : Short_Integer; pragma Import (Ada, E168, "pkg02_remove_comment_blank_lines_E");
+   E210 : Short_Integer; pragma Import (Ada, E210, "pkg03_format_each_gcode_line_E");
+   E217 : Short_Integer; pragma Import (Ada, E217, "pkg20_classify_each_gcode_line_E");
+   E219 : Short_Integer; pragma Import (Ada, E219, "pkg_ada_random_E");
+   E231 : Short_Integer; pragma Import (Ada, E231, "pkg_ada_read_display_file_E");
+   E215 : Short_Integer; pragma Import (Ada, E215, "pkg_ada_read_write_file_E");
+   E213 : Short_Integer; pragma Import (Ada, E213, "pkg10_standardize_gcode_to_ngc_E");
    E233 : Short_Integer; pragma Import (Ada, E233, "pkg_ada_write_display_file_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
@@ -225,7 +225,7 @@ package body ada_main is
       E039 := E039 + 1;
       E081 := E081 + 1;
       Ada.Numerics'Elab_Spec;
-      E207 := E207 + 1;
+      E211 := E211 + 1;
       Ada.Tags'Elab_Spec;
       Ada.Tags'Elab_Body;
       E132 := E132 + 1;
@@ -264,23 +264,23 @@ package body ada_main is
       Ada.Text_Io'Elab_Body;
       E161 := E161 + 1;
       System.Random_Seed'Elab_Body;
-      E223 := E223 + 1;
+      E225 := E225 + 1;
       pkg_ada_dtstamp'elab_body;
       E170 := E170 + 1;
-      pkg00_standardize_gcode_to_ngc'elab_body;
-      E168 := E168 + 1;
-      pkg01_classify_each_gcode_line'elab_body;
-      E206 := E206 + 1;
       pkg02_remove_comment_blank_lines'elab_body;
-      E209 := E209 + 1;
+      E168 := E168 + 1;
       pkg03_format_each_gcode_line'elab_body;
-      E215 := E215 + 1;
-      pkg_ada_random'elab_body;
+      E210 := E210 + 1;
+      pkg20_classify_each_gcode_line'elab_body;
       E217 := E217 + 1;
+      pkg_ada_random'elab_body;
+      E219 := E219 + 1;
       pkg_ada_read_display_file'elab_body;
-      E229 := E229 + 1;
-      pkg_ada_read_write_file'elab_body;
       E231 := E231 + 1;
+      pkg_ada_read_write_file'elab_body;
+      E215 := E215 + 1;
+      pkg10_standardize_gcode_to_ngc'elab_body;
+      E213 := E213 + 1;
       pkg_ada_write_display_file'elab_body;
       E233 := E233 + 1;
    end adainit;
@@ -319,13 +319,13 @@ package body ada_main is
 
 --  BEGIN Object file/option list
    --   /home/wruslan/github-ump/ada-process-ngc-gcodes/obj/pkg_ada_dtstamp.o
-   --   /home/wruslan/github-ump/ada-process-ngc-gcodes/obj/pkg00_standardize_gcode_to_ngc.o
-   --   /home/wruslan/github-ump/ada-process-ngc-gcodes/obj/pkg01_classify_each_gcode_line.o
    --   /home/wruslan/github-ump/ada-process-ngc-gcodes/obj/pkg02_remove_comment_blank_lines.o
    --   /home/wruslan/github-ump/ada-process-ngc-gcodes/obj/pkg03_format_each_gcode_line.o
+   --   /home/wruslan/github-ump/ada-process-ngc-gcodes/obj/pkg20_classify_each_gcode_line.o
    --   /home/wruslan/github-ump/ada-process-ngc-gcodes/obj/pkg_ada_random.o
    --   /home/wruslan/github-ump/ada-process-ngc-gcodes/obj/pkg_ada_read_display_file.o
    --   /home/wruslan/github-ump/ada-process-ngc-gcodes/obj/pkg_ada_read_write_file.o
+   --   /home/wruslan/github-ump/ada-process-ngc-gcodes/obj/pkg10_standardize_gcode_to_ngc.o
    --   /home/wruslan/github-ump/ada-process-ngc-gcodes/obj/pkg_ada_write_display_file.o
    --   /home/wruslan/github-ump/ada-process-ngc-gcodes/obj/main_ada_process_ngc_gcodes.o
    --   -L/home/wruslan/github-ump/ada-process-ngc-gcodes/obj/
