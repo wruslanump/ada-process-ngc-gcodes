@@ -21,7 +21,7 @@ package body ada_main is
    E081 : Short_Integer; pragma Import (Ada, E081, "system__object_reader_E");
    E050 : Short_Integer; pragma Import (Ada, E050, "system__dwarf_lines_E");
    E039 : Short_Integer; pragma Import (Ada, E039, "system__traceback__symbolic_E");
-   E171 : Short_Integer; pragma Import (Ada, E171, "ada__numerics_E");
+   E207 : Short_Integer; pragma Import (Ada, E207, "ada__numerics_E");
    E132 : Short_Integer; pragma Import (Ada, E132, "ada__tags_E");
    E149 : Short_Integer; pragma Import (Ada, E149, "ada__streams_E");
    E166 : Short_Integer; pragma Import (Ada, E166, "system__file_control_block_E");
@@ -34,19 +34,20 @@ package body ada_main is
    E128 : Short_Integer; pragma Import (Ada, E128, "ada__strings__unbounded_E");
    E114 : Short_Integer; pragma Import (Ada, E114, "system__task_info_E");
    E106 : Short_Integer; pragma Import (Ada, E106, "system__task_primitives__operations_E");
-   E183 : Short_Integer; pragma Import (Ada, E183, "ada__calendar_E");
-   E187 : Short_Integer; pragma Import (Ada, E187, "ada__calendar__time_zones_E");
+   E172 : Short_Integer; pragma Import (Ada, E172, "ada__calendar_E");
+   E176 : Short_Integer; pragma Import (Ada, E176, "ada__calendar__time_zones_E");
    E006 : Short_Integer; pragma Import (Ada, E006, "ada__real_time_E");
    E161 : Short_Integer; pragma Import (Ada, E161, "ada__text_io_E");
-   E221 : Short_Integer; pragma Import (Ada, E221, "system__random_seed_E");
-   E181 : Short_Integer; pragma Import (Ada, E181, "pkg_ada_dtstamp_E");
-   E168 : Short_Integer; pragma Import (Ada, E168, "pkg01_classify_each_gcode_line_E");
-   E207 : Short_Integer; pragma Import (Ada, E207, "pkg02_remove_comment_blank_lines_E");
-   E213 : Short_Integer; pragma Import (Ada, E213, "pkg03_format_each_gcode_line_E");
-   E215 : Short_Integer; pragma Import (Ada, E215, "pkg_ada_random_E");
-   E227 : Short_Integer; pragma Import (Ada, E227, "pkg_ada_read_display_file_E");
-   E229 : Short_Integer; pragma Import (Ada, E229, "pkg_ada_read_write_file_E");
-   E231 : Short_Integer; pragma Import (Ada, E231, "pkg_ada_write_display_file_E");
+   E223 : Short_Integer; pragma Import (Ada, E223, "system__random_seed_E");
+   E170 : Short_Integer; pragma Import (Ada, E170, "pkg_ada_dtstamp_E");
+   E168 : Short_Integer; pragma Import (Ada, E168, "pkg00_standardize_gcode_to_ngc_E");
+   E206 : Short_Integer; pragma Import (Ada, E206, "pkg01_classify_each_gcode_line_E");
+   E209 : Short_Integer; pragma Import (Ada, E209, "pkg02_remove_comment_blank_lines_E");
+   E215 : Short_Integer; pragma Import (Ada, E215, "pkg03_format_each_gcode_line_E");
+   E217 : Short_Integer; pragma Import (Ada, E217, "pkg_ada_random_E");
+   E229 : Short_Integer; pragma Import (Ada, E229, "pkg_ada_read_display_file_E");
+   E231 : Short_Integer; pragma Import (Ada, E231, "pkg_ada_read_write_file_E");
+   E233 : Short_Integer; pragma Import (Ada, E233, "pkg_ada_write_display_file_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -224,7 +225,7 @@ package body ada_main is
       E039 := E039 + 1;
       E081 := E081 + 1;
       Ada.Numerics'Elab_Spec;
-      E171 := E171 + 1;
+      E207 := E207 + 1;
       Ada.Tags'Elab_Spec;
       Ada.Tags'Elab_Body;
       E132 := E132 + 1;
@@ -253,9 +254,9 @@ package body ada_main is
       E106 := E106 + 1;
       Ada.Calendar'Elab_Spec;
       Ada.Calendar'Elab_Body;
-      E183 := E183 + 1;
+      E172 := E172 + 1;
       Ada.Calendar.Time_Zones'Elab_Spec;
-      E187 := E187 + 1;
+      E176 := E176 + 1;
       Ada.Real_Time'Elab_Spec;
       Ada.Real_Time'Elab_Body;
       E006 := E006 + 1;
@@ -263,23 +264,25 @@ package body ada_main is
       Ada.Text_Io'Elab_Body;
       E161 := E161 + 1;
       System.Random_Seed'Elab_Body;
-      E221 := E221 + 1;
+      E223 := E223 + 1;
       pkg_ada_dtstamp'elab_body;
-      E181 := E181 + 1;
-      pkg01_classify_each_gcode_line'elab_body;
+      E170 := E170 + 1;
+      pkg00_standardize_gcode_to_ngc'elab_body;
       E168 := E168 + 1;
+      pkg01_classify_each_gcode_line'elab_body;
+      E206 := E206 + 1;
       pkg02_remove_comment_blank_lines'elab_body;
-      E207 := E207 + 1;
+      E209 := E209 + 1;
       pkg03_format_each_gcode_line'elab_body;
-      E213 := E213 + 1;
-      pkg_ada_random'elab_body;
       E215 := E215 + 1;
+      pkg_ada_random'elab_body;
+      E217 := E217 + 1;
       pkg_ada_read_display_file'elab_body;
-      E227 := E227 + 1;
-      pkg_ada_read_write_file'elab_body;
       E229 := E229 + 1;
-      pkg_ada_write_display_file'elab_body;
+      pkg_ada_read_write_file'elab_body;
       E231 := E231 + 1;
+      pkg_ada_write_display_file'elab_body;
+      E233 := E233 + 1;
    end adainit;
 
    procedure Ada_Main_Program;
@@ -316,6 +319,7 @@ package body ada_main is
 
 --  BEGIN Object file/option list
    --   /home/wruslan/github-ump/ada-process-ngc-gcodes/obj/pkg_ada_dtstamp.o
+   --   /home/wruslan/github-ump/ada-process-ngc-gcodes/obj/pkg00_standardize_gcode_to_ngc.o
    --   /home/wruslan/github-ump/ada-process-ngc-gcodes/obj/pkg01_classify_each_gcode_line.o
    --   /home/wruslan/github-ump/ada-process-ngc-gcodes/obj/pkg02_remove_comment_blank_lines.o
    --   /home/wruslan/github-ump/ada-process-ngc-gcodes/obj/pkg03_format_each_gcode_line.o

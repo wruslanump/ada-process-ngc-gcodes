@@ -12,7 +12,7 @@ is
    
    
    -- LIST OF PROCEDURES
-   procedure exec_format_each_gcode_line (inp_fname : in String; out_fname : in String); 
+   procedure exec_format_each_gcode_line; 
    
    
    -- LIST OF FUNCTIONS

@@ -134,6 +134,9 @@ is
    -- =====================================================
    -- with SPARK_Mode => on
    is
+   
+   -- REF : http://www.linuxcnc.org/docs/html/gcode/g-code.html NGC
+   
       count_Percent : Integer := 0; -- (Begin and End G-Code file)
       count_Hash    : Integer := 0; -- (Numeric scaling factors)
       count_MCode   : Integer := 0; -- (Machine control codes)

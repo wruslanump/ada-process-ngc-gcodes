@@ -3,6 +3,8 @@
 -- Author : WRY wruslandr@gmail.com
 -- ========================================================
 
+-- REF : http://www.linuxcnc.org/docs/html/gcode/g-code.html NGC
+
 -- ADA STANDARD PACKAGES
 with Ada.Text_IO;
 with Ada.Numerics;

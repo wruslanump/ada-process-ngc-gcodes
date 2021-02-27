@@ -1,14 +1,14 @@
 (=======================================================
 (1. LINE ACCOUNTING (pkg01 classify gcode lines)
 (=======================================================
-(Curr File Input  = files/bismillah.ngc
+(Curr File Input  = files/just-KSG.ngc
 (
-(lineCount        =  328
-(max_lenUBlineStr =  99
-(lineBlank        =  62
+(lineCount        =  163
+(max_lenUBlineStr =  100
+(lineBlank        =  17
 (lineControl      =  5
-(lineNotBlank     =  261
-(lineTagged       =  328
+(lineNotBlank     =  141
+(lineTagged       =  163
 (
 (Curr File Output = files/out_gcode_file_01.txt
-(2021-02-27 02:58:17.37443782217 finished execution.)
+(2021-02-27 10:00:45.90978591630 finished execution.)

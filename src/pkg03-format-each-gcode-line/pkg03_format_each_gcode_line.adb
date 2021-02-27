@@ -35,17 +35,19 @@ is
    out_fhandle : ATIO.File_Type;
      
    -- =====================================================
-   procedure exec_format_each_gcode_line (inp_fname : in String; out_fname : in String) 
+   procedure exec_format_each_gcode_line
    -- =====================================================
    -- with SPARK_Mode => on
    is
       
    begin
-      ATIO.Put_Line("Run exec_format_each_gcode_line (inp_fname, out_fname)");
-      ATIO.Put_Line("inp_fmode = ATIO.In_File ");
-      ATIO.Put_Line("inp_fname = " & (out_fname));
-      ATIO.Put_Line("out_fmode = ATIO.In_File ");
-      ATIO.Put_Line("out_fname = " & (out_fname));
+      ATIO.New_Line;
+      ATIO.Put_Line("Run PFEGL.format_each_gcode_line");
+      
+      ATIO.New_Line;
+      
+      
+      
       
       
    end exec_format_each_gcode_line;

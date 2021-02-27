@@ -15,6 +15,7 @@ with pkg_ada_read_display_file;
 with pkg_ada_read_write_file;
 with pkg_ada_write_display_file;
 
+with pkg00_standardize_gcode_to_ngc;
 with pkg01_classify_each_gcode_line;
 with pkg02_remove_comment_blank_lines;
 with pkg03_format_each_gcode_line;
@@ -37,43 +38,53 @@ is
    -- package PARWF   renames pkg_ada_read_write_file;
    -- package PAWDF   renames pkg_ada_write_display_file;
    
+   package PSGTN    renames pkg00_standardize_gcode_to_ngc;
    package PCEGL    renames pkg01_classify_each_gcode_line;
    package PRCBL    renames pkg02_remove_comment_blank_lines;
    package PFEGL    renames pkg03_format_each_gcode_line;
+  
+   
    
    -- =======================================================
    -- GENERIC FILE VARIABLES
    -- =======================================================
-   inp_gcode_file1   : String := "files/bismillah.ngc";
-   inp_gcode_file2   : String := "files/just-KSG.ngc";
-          
+   -- REF : http://www.linuxcnc.org/docs/html/gcode/g-code.html 
+   -- Note: must translate other g-code formats to standardized ngc
+   -- Then find and replace. Examples: G0 to G01, G1 to G01 etc
+   
+   inp_gcode_file_01 : String := "files/bismillah.ngc";
+   inp_gcode_file_02 : String := "files/just-KSG.ngc";
+   inp_gcode_file_03 : String := "files/butterfly.nc";
+   inp_gcode_file_04 : String := "files/linuxcnc-logo.nc";  
+   
 -- ========================================================  
 begin
    
    PADTS.dtstamp; ATIO.Put_Line ("Bismillah 3 times WRY");
    PADTS.dtstamp; ATIO.Put_Line ("Running inside GNAT Studio Community");
    ATIO.New_Line;
-  -- ====================================================== 
+   -- ====================================================== 
+   -- PACKAGE-00 -- STANDARDIZE GCODE TO NGC FORMATTED FILES
+   PSGTN.exec_standardize_gcode_to_ngc (inp_gcode_file_01);
+   
+   
+   -- PACKAGE-01 -- NGC FILES
+   -- PCEGL.exec_classify_each_gcode_line (inp_gcode_file1);
+   -- PCEGL.exec_classify_each_gcode_line (inp_gcode_file2);
+   
+   -- NC FILES (Other Formats)
+   -- PCEGL.exec_classify_each_gcode_line ("files/butterfly.nc");
+   -- PCEGL.exec_classify_each_gcode_line ("files/linuxcnc-logo.nc");
+   
+   -- PACKAGE-02
+   -- PRCBL.exec_remove_comment_blank_lines ("files/out_gcode_file_01.txt");
+   
+   -- PACKAGE-03 (TO DO)
+   -- PFEGL.exec_format_each_gcode_line; 
      
-   PCEGL.exec_classify_each_gcode_line (inp_gcode_file1);
-   PRCBL.exec_remove_comment_blank_lines ("files/out_gcode_file_01.txt");
-   
-   
    -- =====================================================
    ATIO.New_Line; PADTS.dtstamp; ATIO.Put_Line ("Alhamdulillah 3 times WRY");
 -- ========================================================   
 end main_ada_process_ngc_gcodes;
 -- ========================================================
 
--- =======================================================
--- LINE ACCOUNTING AND CLASSIFICATION SUMMARY 
--- =======================================================
--- lineCount        =  328
--- max_lenUBlineStr =  99
--- lineBlank        =  62
--- lineNotBlank     =  266
--- lineTagged       =  328
--- Curr File Output = files/out_gcode_file01.txt
-
--- 2021-02-25 10:03:33.57042091241 Alhamdulillah 3 times WRY
--- [2021-02-25 18:03:33] process terminated successfully, elapsed time: 02.20s

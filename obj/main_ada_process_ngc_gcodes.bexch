@@ -5,6 +5,7 @@ b__main_ada_process_ngc_gcodes.o
 20210225034727
 [BOUND OBJECT FILES]
 /home/wruslan/github-ump/ada-process-ngc-gcodes/obj/pkg_ada_dtstamp.o
+/home/wruslan/github-ump/ada-process-ngc-gcodes/obj/pkg00_standardize_gcode_to_ngc.o
 /home/wruslan/github-ump/ada-process-ngc-gcodes/obj/pkg01_classify_each_gcode_line.o
 /home/wruslan/github-ump/ada-process-ngc-gcodes/obj/pkg02_remove_comment_blank_lines.o
 /home/wruslan/github-ump/ada-process-ngc-gcodes/obj/pkg03_format_each_gcode_line.o
