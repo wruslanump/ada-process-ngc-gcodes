@@ -1,12 +1,11 @@
 <?xml version="1.0"?>
 <Locations >
-  <Project>
-    <vfs_file />
+  <Project >
     <file_marker column=" 1" line=" 1" >
       <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/main_ada_process_ngc_gcodes.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 60" line=" 78" >
+    <file_marker column=" 59" line=" 68" >
       <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/main_ada_process_ngc_gcodes.adb</vfs_file>
     </file_marker>
@@ -38,7 +37,7 @@
       <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 3" line=" 51" >
+    <file_marker column=" 1" line=" 167" >
       <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
     </file_marker>
@@ -46,11 +45,11 @@
       <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 55" line=" 75" >
+    <file_marker column=" 4" line=" 61" >
       <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/main_ada_process_ngc_gcodes.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 4" line=" 17" >
+    <file_marker column=" 4" line=" 16" >
       <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.ads</vfs_file>
     </file_marker>
@@ -58,7 +57,7 @@
       <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 7" line=" 46" >
+    <file_marker column=" 7" line=" 73" >
       <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
     </file_marker>
@@ -66,7 +65,7 @@
       <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 4" line=" 76" >
+    <file_marker column=" 3" line=" 62" >
       <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/main_ada_process_ngc_gcodes.adb</vfs_file>
     </file_marker>
@@ -74,7 +73,7 @@
       <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 4" line=" 76" >
+    <file_marker column=" 3" line=" 62" >
       <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/main_ada_process_ngc_gcodes.adb</vfs_file>
     </file_marker>
@@ -82,7 +81,7 @@
       <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 7" line=" 76" >
+    <file_marker column=" 10" line=" 62" >
       <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/main_ada_process_ngc_gcodes.adb</vfs_file>
     </file_marker>
@@ -114,9 +113,457 @@
       <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.ads</vfs_file>
     </file_marker>
-    <file_marker current="true" column=" 1" line=" 1" >
+    <file_marker column=" 1" line=" 1" >
       <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 33" line=" 65" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/main_ada_process_ngc_gcodes.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 68" line=" 55" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 93" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg-ada-read-display-file/pkg_ada_read_display_file.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 73" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 131" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 6" line=" 121" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 55" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 41" line=" 116" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg-ada-read-write-file/pkg_ada_read_write_file.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 6" line=" 152" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 30" line=" 126" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 6" line=" 121" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 6" line=" 121" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 6" line=" 121" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 6" line=" 121" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 6" line=" 121" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 6" line=" 121" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 116" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 28" line=" 106" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 5" line=" 157" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 60" line=" 134" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 5" line=" 157" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 24" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg-ada-read-write-file/pkg_ada_read_write_file.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 24" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 18" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 67" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 45" line=" 163" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 75" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/main_ada_process_ngc_gcodes.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 74" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/main_ada_process_ngc_gcodes.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 6" line=" 56" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 17" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 63" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 20" line=" 58" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 39" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 66" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 86" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 62" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 116" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 10" line=" 91" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 10" line=" 104" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 6" line=" 129" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 72" line=" 130" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 34" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 77" line=" 128" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 78" line=" 148" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 48" line=" 65" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 64" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 79" line=" 65" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 10" line=" 204" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 10" line=" 174" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 43" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 10" line=" 174" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 231" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 165" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 85" line=" 108" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 44" line=" 110" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 17" line=" 108" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 10" line=" 188" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 180" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 48" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 48" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 48" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 48" line=" 178" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 10" line=" 173" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 26" line=" 202" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 192" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 68" line=" 244" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 69" line=" 243" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 10" line=" 204" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 10" line=" 94" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 135" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 20" line=" 118" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 40" line=" 83" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 80" line=" 118" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 45" line=" 108" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-lines/pkg02_remove_comment_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 36" line=" 160" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 20" line=" 142" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 167" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg01-classify-gcode-lines/pkg01_classify_gcode_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg03-process-gcode-line/pkg03_process_gcode_line.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 5" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-blank-lines/pkg02_remove_comment_blank_lines.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 19" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-blank-lines/pkg02_remove_comment_blank_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 59" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/main_ada_process_ngc_gcodes.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 19" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-blank-lines/pkg02_remove_comment_blank_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 10" line=" 59" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/main_ada_process_ngc_gcodes.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 14" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-blank-lines/pkg02_remove_comment_blank_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 59" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/main_ada_process_ngc_gcodes.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 60" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/main_ada_process_ngc_gcodes.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 59" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/main_ada_process_ngc_gcodes.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 3" line=" 71" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-blank-lines/pkg02_remove_comment_blank_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 59" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/main_ada_process_ngc_gcodes.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 68" line=" 43" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-blank-lines/pkg02_remove_comment_blank_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 3" line=" 71" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-blank-lines/pkg02_remove_comment_blank_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 59" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/main_ada_process_ngc_gcodes.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 6" line=" 142" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-blank-lines/pkg02_remove_comment_blank_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 6" line=" 142" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-blank-lines/pkg02_remove_comment_blank_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 143" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-blank-lines/pkg02_remove_comment_blank_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 72" line=" 265" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-blank-lines/pkg02_remove_comment_blank_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 72" line=" 261" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-blank-lines/pkg02_remove_comment_blank_lines.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 73" line=" 262" >
+      <vfs_project>/home/wruslan/github-ump/ada-process-ngc-gcodes/ada_process_ngc_gcodes.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-process-ngc-gcodes/src/pkg02-remove-comment-blank-lines/pkg02_remove_comment_blank_lines.adb</vfs_file>
     </file_marker>
   </Project>
 </Locations>

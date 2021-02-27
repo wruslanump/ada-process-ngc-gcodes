@@ -18,12 +18,12 @@ RV NO_ELABORATION_CODE
 RV NO_OBSOLESCENT_FEATURES
 RV SPARK_05
 
-U ada_main%b		b__main_ada_process_ngc_gcodes.adb  12b46627 OO PK IL
+U ada_main%b		b__main_ada_process_ngc_gcodes.adb  8e9d0d4f OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.exceptions%s	a-except.adb		a-except.ali
 Z system%s		system.ads		system.ali
 
-U ada_main%s		b__main_ada_process_ngc_gcodes.ads  bb1beb80 EE NE OO PK IL
+U ada_main%s		b__main_ada_process_ngc_gcodes.ads  d2c4197f EE NE OO PK IL
 W system%s		system.ads		system.ali
 W system.parameters%s	s-parame.adb		s-parame.ali
 W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
@@ -31,8 +31,8 @@ W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 D ada.ads		20200312110721 76789da1 ada%s
 D a-except.ads		20200312110721 291912d5 ada.exceptions%s
 D a-unccon.ads		20200312110721 0e9b276f ada.unchecked_conversion%s
-D b__main_ada_process_ngc_gcodes.ads  20210225165621 9579b599 ada_main%s
-D b__main_ada_process_ngc_gcodes.adb  20210225165621 aed4c16b ada_main%b
+D b__main_ada_process_ngc_gcodes.ads  20210227025816 fca64766 ada_main%s
+D b__main_ada_process_ngc_gcodes.adb  20210227025816 5b2258fc ada_main%b
 D system.ads		20200312110721 4635ec04 system%s
 D s-parame.ads		20200312110721 48ec542b system.parameters%s
 D s-secsta.ads		20200312110721 20bbe636 system.secondary_stack%s
@@ -44,7 +44,7 @@ X 1 ada.ads
 X 2 a-except.ads
 54K13*Exceptions 349e19 5|6w10
 X 4 b__main_ada_process_ngc_gcodes.ads
-6K9*ada_main 731l5 731e13 5|8b14 338l5 338t13
+6K9*ada_main 743l5 743e13 5|8b14 338l5 338t13
 8i4*gnat_argc{integer} 12m22 12r22 5|305m7
 9m4*gnat_argv{6|67M9} 13m22 13r22 5|306m7
 10m4*gnat_envp{6|67M9} 14m22 14r22 5|307m7
@@ -77,7 +77,8 @@ X 4 b__main_ada_process_ngc_gcodes.ads
 . 416r22 418r22 420r22 422r22 424r22 426r22 428r22 430r22 432r22 434r22 436r22
 . 438r22 440r22 442r22 444r22 446r22 448r22 450r22 452r22 454r22 456r22 458r22
 . 460r22 462r22 464r22 466r22 468r22 470r22 472r22 474r22 476r22 478r22 480r22
-. 482r22 484r22 486r22 488r22 490r22 492r22 494r22 496r22
+. 482r22 484r22 486r22 488r22 490r22 492r22 494r22 496r22 498r22 500r22 502r22
+. 504r22
 40m4*u00001{39M9} 41r22
 42m4*u00002{39M9} 43r22
 44m4*u00003{39M9} 45r22
@@ -307,6 +308,10 @@ X 4 b__main_ada_process_ngc_gcodes.ads
 492m4*u00227{39M9} 493r22
 494m4*u00228{39M9} 495r22
 496m4*u00229{39M9} 497r22
+498m4*u00230{39M9} 499r22
+500m4*u00231{39M9} 501r22
+502m4*u00232{39M9} 503r22
+504m4*u00233{39M9} 505r22
 X 5 b__main_ada_process_ngc_gcodes.adb
 10i4 E075{short_integer} 10m46 10r46 210m7 210r15
 11i4 E013{short_integer} 11m46 11r46 217m7 217r15
@@ -339,15 +344,15 @@ X 5 b__main_ada_process_ngc_gcodes.adb
 38i4 E187{short_integer} 38m46 38r46 258m7 258r15
 39i4 E006{short_integer} 39m46 39r46 261m7 261r15
 40i4 E161{short_integer} 40m46 40r46 60m7 60r15 264m7 264r15
-41i4 E217{short_integer} 41m46 41r46 266m7 266r15
+41i4 E221{short_integer} 41m46 41r46 266m7 266r15
 42i4 E181{short_integer} 42m46 42r46 268m7 268r15
 43i4 E168{short_integer} 43m46 43r46 270m7 270r15
 44i4 E207{short_integer} 44m46 44r46 272m7 272r15
-45i4 E209{short_integer} 45m46 45r46 274m7 274r15
-46i4 E211{short_integer} 46m46 46r46 276m7 276r15
-47i4 E223{short_integer} 47m46 47r46 278m7 278r15
-48i4 E225{short_integer} 48m46 48r46 280m7 280r15
-49i4 E227{short_integer} 49m46 49r46 282m7 282r15
+45i4 E213{short_integer} 45m46 45r46 274m7 274r15
+46i4 E215{short_integer} 46m46 46r46 276m7 276r15
+47i4 E227{short_integer} 47m46 47r46 278m7 278r15
+48i4 E229{short_integer} 48m46 48r46 280m7 280r15
+49i4 E231{short_integer} 49m46 49r46 282m7 282r15
 51a4 Sec_Default_Sized_Stacks(8|45R9) 192m32 192r32
 53a4 Local_Priority_Specific_Dispatching{string} 179r9
 54a4 Local_Interrupt_States{string} 182r27

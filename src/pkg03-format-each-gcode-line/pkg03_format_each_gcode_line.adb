@@ -1,4 +1,4 @@
--- File   : pkg03_process_gcode_line.adb
+-- File   : pkg03_format_each_gcode_line.adb
 -- Date   : Thu 25 Feb 2021 01:51:47 PM +08
 -- Author : WRY wruslandr@gmail.com
 -- ========================================================
@@ -23,7 +23,7 @@ with pkg_ada_dtstamp;
 
 
 -- ========================================================
-package body pkg03_process_gcode_line
+package body pkg03_format_each_gcode_line
 -- ========================================================
 --   with SPARK_Mode => on
 is
@@ -31,20 +31,24 @@ is
    package ATIO renames Ada.Text_IO;
    package ASU  renames Ada.Strings.Unbounded;
    
+   inp_fhandle : ATIO.File_Type;
+   out_fhandle : ATIO.File_Type;
      
    -- =====================================================
-   procedure exec_read_display_file (inp_fmode   : in ATIO.File_Mode; inp_fname   : in String) 
+   procedure exec_format_each_gcode_line (inp_fname : in String; out_fname : in String) 
    -- =====================================================
    -- with SPARK_Mode => on
    is
       
    begin
-      ATIO.Put_Line("Run exec_read_display_file (inp_fmode, inp_fname)");
+      ATIO.Put_Line("Run exec_format_each_gcode_line (inp_fname, out_fname)");
       ATIO.Put_Line("inp_fmode = ATIO.In_File ");
-      ATIO.Put_Line("inp_fname = " & (inp_fname));
+      ATIO.Put_Line("inp_fname = " & (out_fname));
+      ATIO.Put_Line("out_fmode = ATIO.In_File ");
+      ATIO.Put_Line("out_fname = " & (out_fname));
       
       
-   end exec_read_display_file;
+   end exec_format_each_gcode_line;
    -- ====================================================
    
    
@@ -54,5 +58,5 @@ is
 begin
   null;
 -- ========================================================
-end pkg03_process_gcode_line;
+end pkg03_format_each_gcode_line;
 -- ========================================================    

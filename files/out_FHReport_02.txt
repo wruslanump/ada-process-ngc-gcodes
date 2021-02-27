@@ -3,9 +3,9 @@
 =======================================================
 Curr File Input  = files/out_gcode_file_01.txt
 
-lineCount        =  328
-lineRemoved      =  105
-lineRemaining    =  223
+lineCount        =  328	(input file line count)
+lineRemoved      =  105	(removed comment and blank lines)
+lineRemaining    =  223	(output file line count)
 
 count_Percent    =  2
 count_Hash       =  7
@@ -13,19 +13,29 @@ count_MCode      =  3
 count_GCode      =  211
 sum_AllCodes     =  223
 
-count_M1         =  0
-count_M2         =  1
-count_M3         =  1
-count_M4         =  0
-count_M5         =  1
+count_Hash6      =  1 	(X axis offset)
+count_Hash7      =  1 	(Y axis offset)
+count_Hash8      =  1 	(Z axis offset)
+count_Hash10     =  1 	(XY axes scaling factor)
+count_Hash11     =  1 	(Z  axis scaling factor)
+count_Hash20     =  1 	(Feedrate Spindle)
+count_Hash21     =  1 	(Feedrate Spindle)
+sum_Hash         =  7
+
+count_M0         =  0	(pause a running program temporarily)
+count_M1         =  0	(pause program temporarily if stop switch ON)
+count_M2         =  1	(end the program)
+count_M3         =  1	(start spindle clockwise at S speed)
+count_M4         =  0	(start spindle counter-clockwise at S speed)
+count_M5         =  1	(stop the spindle)
 sum_MX           =  3
 
-count_G00        =  37
-count_G01        =  93
-count_G02        =  40
-count_G03        =  40
-count_G21        =  1
+count_G00        =  37	(rapid linear move)
+count_G01        =  93	(linear move)
+count_G02        =  40	(clockwise arc move)
+count_G03        =  40	(counter-clockwise arc move)
+count_G21        =  1	(use mm length units. G20 = inches)
 sum_GXX          =  211
 
 Curr File Output = files/out_gcode_file_02.txt
-(2021-02-25 16:56:29.83304323267 finished execution.)
+(2021-02-27 02:58:25.37447196220 finished execution.)

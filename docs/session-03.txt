@@ -1,0 +1,196 @@
+Processing of NGC g-codes for CNC Machining (using Ada 100%) 
+
+=======================================================
+/home/wruslan/github-ump/ada-process-ngc-gcodes/exec/main_ada_process_ngc_gcodes.adx
+2021-02-27 02:58:17.37443098887 Bismillah 3 times WRY
+2021-02-27 02:58:17.37443145091 Running inside GNAT Studio Community
+
+=======================================================
+1. LINE ACCOUNTING (pkg01 classify gcode lines) 
+=======================================================
+Curr File Input  = files/bismillah.ngc
+
+lineCount        =  328
+max_lenUBlineStr =  99
+lineBlank        =  62
+lineControl      =  5
+lineNotBlank     =  261
+lineTagged       =  328
+
+Curr File Output = files/out_gcode_file_01.txt
+(2021-02-27 02:58:17.37443727080 finished execution.)
+
+=======================================================
+2. LINE ACCOUNTING (pkg02 remove comment lines) 
+=======================================================
+Curr File Input  = files/out_gcode_file_01.txt
+
+lineCount        =  328	(input file line count)
+lineRemoved      =  105	(removed comment and blank lines)
+lineRemaining    =  223	(output file line count)
+
+count_Percent    =  2	(Begin and End of GCode file)
+count_Hash       =  7	(Geometrical setting codes)
+count_MCode      =  3	(Machine Control codes)
+count_GCode      =  211	(Movement Control codes)
+sum_AllCodes     =  223
+
+count_Hash6      =  1 	(X axis offset)
+count_Hash7      =  1 	(Y axis offset)
+count_Hash8      =  1 	(Z axis offset)
+count_Hash10     =  1 	(XY axes scaling factor)
+count_Hash11     =  1 	(Z  axis scaling factor)
+count_Hash20     =  1 	(Feedrate Spindle)
+count_Hash21     =  1 	(Feedrate Spindle)
+sum_Hash         =  7
+
+count_M0         =  0	(pause a running program temporarily)
+count_M1         =  0	(pause program temporarily if stop switch ON)
+count_M2         =  1	(end the program)
+count_M3         =  1	(start spindle clockwise at S speed)
+count_M4         =  0	(start spindle counter-clockwise at S speed)
+count_M5         =  1	(stop the spindle)
+sum_MX           =  3
+
+count_G00        =  37	(rapid linear move)
+count_G01        =  93	(linear move)
+count_G02        =  40	(clockwise arc move)
+count_G03        =  40	(counter-clockwise arc move)
+count_G21        =  1	(use mm length units. G20 = inches)
+sum_GXX          =  211
+
+Curr File Output = files/out_gcode_file_02.txt
+(2021-02-27 02:58:25.37447081591 finished execution.)
+
+2021-02-27 02:58:29.37447644055 Alhamdulillah 3 times WRY
+[2021-02-27 10:58:29] process terminated successfully, elapsed time: 12.18s
+
+====================================================
+
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-ump$ cd ada-process-ngc-gcodes/
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-ump/ada-process-ngc-gcodes$ ls -al
+total 48
+drwxrwxr-x  9 wruslan wruslan 4096 Feb 25 11:47 .
+drwxrwxr-x 11 wruslan wruslan 4096 Feb 26 20:20 ..
+-rw-rw-r--  1 wruslan wruslan 4352 Feb 25 11:47 ada_process_ngc_gcodes.gpr
+drwxrwxr-x  3 wruslan wruslan 4096 Feb 27 11:03 docs
+drwxrwxr-x  2 wruslan wruslan 4096 Feb 27 10:58 exec
+drwxrwxr-x  2 wruslan wruslan 4096 Feb 25 11:44 figures
+drwxrwxr-x  2 wruslan wruslan 4096 Feb 26 00:35 files
+drwxrwxr-x  8 wruslan wruslan 4096 Feb 27 10:58 .git
+drwxrwxr-x  2 wruslan wruslan 4096 Feb 27 11:26 obj
+-rw-rw-r--  1 wruslan wruslan   66 Feb 25 11:18 README.md
+drwxrwxr-x 10 wruslan wruslan 4096 Feb 27 09:21 src
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-ump/ada-process-ngc-gcodes$ 
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-ump/ada-process-ngc-gcodes$ tree ./
+./
+├── ada_process_ngc_gcodes.gpr
+├── docs
+│   ├── IMPORTANT-for-gcodes
+│   │   ├── main_ada_read_write.adb
+│   │   ├── m-codes-and-g-codes-in-NGC-file.txt
+│   │   └── to-clean-main_ada_read_write.adb
+│   ├── session-01.txt
+│   ├── session-02.txt
+│   ├── session-03.txt
+│   └── temp.txt
+├── exec
+│   └── main_ada_process_ngc_gcodes.adx
+├── figures
+├── files
+│   ├── bismillah.ngc
+│   ├── just-KSG.ngc
+│   ├── out_FHReport_01.txt
+│   ├── out_FHReport_02.txt
+│   ├── out_gcode_file_01.txt
+│   └── out_gcode_file_02.txt
+├── obj
+│   ├── ada_process_ngc_gcodes-loc.xml
+│   ├── b__main_ada_process_ngc_gcodes.adb
+│   ├── b__main_ada_process_ngc_gcodes.ads
+│   ├── b__main_ada_process_ngc_gcodes.ali
+│   ├── b__main_ada_process_ngc_gcodes.o
+│   ├── main_ada_process_ngc_gcodes.adb.stderr
+│   ├── main_ada_process_ngc_gcodes.adb.stdout
+│   ├── main_ada_process_ngc_gcodes.ali
+│   ├── main_ada_process_ngc_gcodes.bexch
+│   ├── main_ada_process_ngc_gcodes.o
+│   ├── pkg01_classify_each_gcode_line.adb.stderr
+│   ├── pkg01_classify_each_gcode_line.adb.stdout
+│   ├── pkg01_classify_each_gcode_line.ali
+│   ├── pkg01_classify_each_gcode_line.o
+│   ├── pkg01_classify_gcode_lines.adb.stderr
+│   ├── pkg01_classify_gcode_lines.adb.stdout
+│   ├── pkg01_classify_gcode_lines.ali
+│   ├── pkg01_classify_gcode_lines.cswi
+│   ├── pkg01_classify_gcode_lines.o
+│   ├── pkg02_remove_comment_blank_lines.adb.stderr
+│   ├── pkg02_remove_comment_blank_lines.adb.stdout
+│   ├── pkg02_remove_comment_blank_lines.ali
+│   ├── pkg02_remove_comment_blank_lines.o
+│   ├── pkg02_remove_comment_lines.adb.stderr
+│   ├── pkg02_remove_comment_lines.adb.stdout
+│   ├── pkg02_remove_comment_lines.ali
+│   ├── pkg02_remove_comment_lines.cswi
+│   ├── pkg02_remove_comment_lines.o
+│   ├── pkg03_format_each_gcode_line.adb.stderr
+│   ├── pkg03_format_each_gcode_line.adb.stdout
+│   ├── pkg03_format_each_gcode_line.ali
+│   ├── pkg03_format_each_gcode_line.o
+│   ├── pkg03_process_gcode_line.adb.stderr
+│   ├── pkg03_process_gcode_line.adb.stdout
+│   ├── pkg03_process_gcode_line.ali
+│   ├── pkg03_process_gcode_line.cswi
+│   ├── pkg03_process_gcode_line.o
+│   ├── pkg_ada_dtstamp.adb.stderr
+│   ├── pkg_ada_dtstamp.adb.stdout
+│   ├── pkg_ada_dtstamp.ali
+│   ├── pkg_ada_dtstamp.o
+│   ├── pkg_ada_random.adb.stderr
+│   ├── pkg_ada_random.adb.stdout
+│   ├── pkg_ada_random.ali
+│   ├── pkg_ada_random.o
+│   ├── pkg_ada_read_display_file.adb.stderr
+│   ├── pkg_ada_read_display_file.adb.stdout
+│   ├── pkg_ada_read_display_file.ali
+│   ├── pkg_ada_read_display_file.o
+│   ├── pkg_ada_read_write_file.adb.stderr
+│   ├── pkg_ada_read_write_file.adb.stdout
+│   ├── pkg_ada_read_write_file.ali
+│   ├── pkg_ada_read_write_file.o
+│   ├── pkg_ada_write_display_file.adb.stderr
+│   ├── pkg_ada_write_display_file.adb.stdout
+│   ├── pkg_ada_write_display_file.ali
+│   └── pkg_ada_write_display_file.o
+├── README.md
+└── src
+    ├── main_ada_process_ngc_gcodes.adb
+    ├── pkg01-classify-each-gcode-line
+    │   ├── pkg01_classify_each_gcode_line.adb
+    │   └── pkg01_classify_each_gcode_line.ads
+    ├── pkg02-remove-comment-blank-lines
+    │   ├── pkg02_remove_comment_blank_lines.adb
+    │   └── pkg02_remove_comment_blank_lines.ads
+    ├── pkg03-format-each-gcode-line
+    │   ├── pkg03_format_each_gcode_line.adb
+    │   └── pkg03_format_each_gcode_line.ads
+    ├── pkg-ada-dtstamp
+    │   ├── pkg_ada_dtstamp.adb
+    │   └── pkg_ada_dtstamp.ads
+    ├── pkg-ada-random
+    │   ├── pkg_ada_random.adb
+    │   └── pkg_ada_random.ads
+    ├── pkg-ada-read-display-file
+    │   ├── pkg_ada_read_display_file.adb
+    │   └── pkg_ada_read_display_file.ads
+    ├── pkg-ada-read-write-file
+    │   ├── pkg_ada_read_write_file.adb
+    │   └── pkg_ada_read_write_file.ads
+    └── pkg-ada-write-display-file
+        ├── pkg_ada_write_display_file.adb
+        └── pkg_ada_write_display_file.ads
+
+15 directories, 90 files
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github-ump/ada-process-ngc-gcodes$ 
+
+
