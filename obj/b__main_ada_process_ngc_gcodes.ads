@@ -37,7 +37,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#07d4a451#;
+   u00001 : constant Version_32 := 16#6a3466ef#;
    pragma Export (C, u00001, "main_ada_process_ngc_gcodesB");
    u00002 : constant Version_32 := 16#050ff2f0#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -459,11 +459,11 @@ package ada_main is
    pragma Export (C, u00210, "pkg03_format_each_gcode_lineS");
    u00211 : constant Version_32 := 16#cd2959fb#;
    pragma Export (C, u00211, "ada__numericsS");
-   u00212 : constant Version_32 := 16#e21a6f33#;
+   u00212 : constant Version_32 := 16#2879ecc3#;
    pragma Export (C, u00212, "pkg10_standardize_gcode_to_ngcB");
-   u00213 : constant Version_32 := 16#ec595c86#;
+   u00213 : constant Version_32 := 16#0e25298e#;
    pragma Export (C, u00213, "pkg10_standardize_gcode_to_ngcS");
-   u00214 : constant Version_32 := 16#a65d5ce7#;
+   u00214 : constant Version_32 := 16#f27a0c69#;
    pragma Export (C, u00214, "pkg_ada_read_write_fileB");
    u00215 : constant Version_32 := 16#ce281218#;
    pragma Export (C, u00215, "pkg_ada_read_write_fileS");

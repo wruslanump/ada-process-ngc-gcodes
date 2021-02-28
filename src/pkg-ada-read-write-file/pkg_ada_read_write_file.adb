@@ -66,6 +66,7 @@ is
       
       ATIO.New_Line;
       inp_lineCount := 0;
+      
       -- Traverse file line by line 
       while not ATIO.End_Of_File (inp_fhandle) loop
          
@@ -75,12 +76,16 @@ is
          inp_lineCount := inp_lineCount + 1;
          
          -- Display read line to terminal
-         ATIO.Put (ATIO.Standard_Output, "LINE_NO " & Integer'Image(inp_lineCount) & " : "); 
+         -- ATIO.Put (ATIO.Standard_Output, "LINE_NO " & Integer'Image(inp_lineCount) & " : "); 
          ATIO.Put_Line (ATIO.Standard_Output, ASU.To_String (inp_UBlineStr)); 
          
          -- Write read line to output file
-         ATIO.Put (out_fhandle, "LINE_NO " & Integer'Image(inp_lineCount) & " : "); 
-         ATIO.Put_Line (out_fhandle, ASU.To_String (inp_UBlineStr)); 
+         if len_UBlineStr =  0 then
+            -- ATIO.Put (out_fhandle, "(BLANK LINENO): " & Integer'Image(inp_lineCount)); 
+            ATIO.Put_Line (out_fhandle, ASU.To_String (inp_UBlineStr)); 
+         else
+             ATIO.Put_Line (out_fhandle, ASU.To_String (inp_UBlineStr));
+         end if;   
          
       end loop;   
             

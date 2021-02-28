@@ -10,7 +10,7 @@ RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U main_ada_process_ngc_gcodes%b  main_ada_process_ngc_gcodes.adb  07d4a451 NE OO SU IL
+U main_ada_process_ngc_gcodes%b  main_ada_process_ngc_gcodes.adb  6a3466ef NE OO SU IL
 W ada%s			ada.ads			ada.ali
 W ada.real_time%s	a-reatim.adb		a-reatim.ali
 W ada.strings%s		a-string.ads		a-string.ali
@@ -43,10 +43,10 @@ D a-unccon.ads		20200312110721 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20200312110721 5ab55268 interfaces%s
 D i-c.ads		20200312110721 5421119b interfaces.c%s
 D i-cstrea.ads		20200312110721 e53d8b8e interfaces.c_streams%s
-D main_ada_process_ngc_gcodes.adb  20210227163606 e6ee2509 main_ada_process_ngc_gcodes%b
+D main_ada_process_ngc_gcodes.adb  20210228124254 697292bf main_ada_process_ngc_gcodes%b
 D pkg02_remove_comment_blank_lines.ads  20210227012344 4130c3d6 pkg02_remove_comment_blank_lines%s
 D pkg03_format_each_gcode_line.ads  20210227094948 55bba1a8 pkg03_format_each_gcode_line%s
-D pkg10_standardize_gcode_to_ngc.ads  20210227114622 e4dc26c3 pkg10_standardize_gcode_to_ngc%s
+D pkg10_standardize_gcode_to_ngc.ads  20210228045232 06a053cb pkg10_standardize_gcode_to_ngc%s
 D pkg20_classify_each_gcode_line.ads  20210227131302 f1d7af69 pkg20_classify_each_gcode_line%s
 D pkg_ada_dtstamp.ads	20210221081420 f15ab596 pkg_ada_dtstamp%s
 D pkg_ada_random.ads	20210221153352 03e92377 pkg_ada_random%s
@@ -107,14 +107,12 @@ X 18 main_ada_process_ngc_gcodes.adb
 44K12 PFEGL=44:29
 55a4 inp_gcode_file_01{string} 70r43
 56a4 inp_gcode_file_02{string}
-57a4 inp_gcode_file_03{string}
-58a4 inp_gcode_file_04{string}
 X 19 pkg02_remove_comment_blank_lines.ads
 8K9*pkg02_remove_comment_blank_lines 18|20w6 43r29 19|23e37
 X 20 pkg03_format_each_gcode_line.ads
 7K9*pkg03_format_each_gcode_line 18|21w6 44r29 20|21e33
 X 21 pkg10_standardize_gcode_to_ngc.ads
-9K9*pkg10_standardize_gcode_to_ngc 18|18w6 41r29 21|25e35
+9K9*pkg10_standardize_gcode_to_ngc 18|18w6 41r29 21|35e35
 18U14*exec10_standardize_gcode_to_ngc 18|70s10
 X 22 pkg20_classify_each_gcode_line.ads
 8K9*pkg20_classify_each_gcode_line 18|19w6 42r29 22|22e35

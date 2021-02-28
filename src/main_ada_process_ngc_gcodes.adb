@@ -54,8 +54,8 @@ is
    
    inp_gcode_file_01 : String := "files/bismillah.ngc";
    inp_gcode_file_02 : String := "files/just-KSG.ngc";
-   inp_gcode_file_03 : String := "files/butterfly.nc";
-   inp_gcode_file_04 : String := "files/linuxcnc-logo.nc";  
+   -- inp_gcode_file_03 : String := "files/butterfly.nc";
+   -- inp_gcode_file_04 : String := "files/linuxcnc-logo.nc";  
    
 -- ========================================================  
 begin
@@ -70,7 +70,7 @@ begin
    PSGTN.exec10_standardize_gcode_to_ngc (inp_gcode_file_01);
    
    
-   -- PACKAGE-20 -- FOR NGC FILES
+   -- PACKAGE-20 -- FOR NGC FILES REPORT
    -- PCEGL.exec20_classify_each_gcode_line;
    
    
