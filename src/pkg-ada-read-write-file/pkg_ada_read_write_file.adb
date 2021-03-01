@@ -75,15 +75,20 @@ is
          len_UBlineStr := ASU.Length (inp_UBlineStr);
          inp_lineCount := inp_lineCount + 1;
          
-         -- Display read line to terminal
+         --DISPLAY read line to terminal (if required)
+         -- ==========================================
          -- ATIO.Put (ATIO.Standard_Output, "LINE_NO " & Integer'Image(inp_lineCount) & " : "); 
          ATIO.Put_Line (ATIO.Standard_Output, ASU.To_String (inp_UBlineStr)); 
          
          -- Write read line to output file
+         -- ==========================================
          if len_UBlineStr =  0 then
-            -- ATIO.Put (out_fhandle, "(BLANK LINENO): " & Integer'Image(inp_lineCount)); 
+            -- DISABLE LINE NUMBERS
+            ATIO.Put (out_fhandle, "(BLANK LINENO): " & Integer'Image(inp_lineCount)); 
+            -- ALSO WRITE BLANK LINES
             ATIO.Put_Line (out_fhandle, ASU.To_String (inp_UBlineStr)); 
          else
+             -- WRITE NON BLANK LINES
              ATIO.Put_Line (out_fhandle, ASU.To_String (inp_UBlineStr));
          end if;   
          

@@ -77,7 +77,7 @@ is
       
       -- (11) Call internal procedure
       -- ==================================================
-      inp_UBfname := ASU.To_Unbounded_String (ASU.To_String (inp_gcode_file_10));
+      inp_UBfname := ASU.To_Unbounded_String ("files/out_gcode_file_10.txt");
       out_UBfname := ASU.To_Unbounded_String (out_gcode_file_11);
       
       ATIO.Put_Line ("=====================================================");
@@ -90,6 +90,7 @@ is
       exec11_replace_uppercase_all_chars (inp_UBfname, out_UBfname);
       ATIO.New_Line;
       
+      -- ==================================================
       -- (12) Call internal procedure
       -- ==================================================
       inp_UBfname := ASU.To_Unbounded_String (out_gcode_file_11);
@@ -105,6 +106,7 @@ is
       exec12_remove_whitespace_each_line (inp_UBfname, out_UBfname);
       ATIO.New_Line;
      
+      -- ==================================================
       -- (13) Call internal procedure
       -- ==================================================
       inp_UBfname := ASU.To_Unbounded_String (out_gcode_file_12);
@@ -126,9 +128,10 @@ is
       -- Finally write reports for all generated files 
       ATIO.Put_Line ("=====================================================");
       ATIO.Put_Line ("PSGTN Internal: exec_report_pkg10_standardize_gcode_to_ngc (app_report_pkg10);");
-      ATIO.Put_Line ("Appended to single output file");
       ATIO.Put_Line ("output = " & app_report_pkg10);
-      exec_report_pkg10_standardize_gcode_to_ngc (app_report_pkg10);
+      
+      -- Execute after check 
+      -- exec_report_pkg10_standardize_gcode_to_ngc (app_report_pkg10);
             
       ATIO.Put_Line("End PSGTN.exec10_standardize_gcode_to_ngc (" & inp_gcode_fname & ")");
       ATIO.Put_Line ("=====================================================");
@@ -152,21 +155,21 @@ is
       ATIO.Put_Line ("Opened input file : " & ASU.To_String (inp_UBfname)  & " successfully.");
       
       ATIO.Create (out_fhandle, ATIO.Out_File, ASU.To_String (out_UBfname));
-      ATIO.Put_Line ("Opened output file: " &  ASU.To_String (out_UBfname) & " duccessfully.");
+      ATIO.Put_Line ("Opened output file: " &  ASU.To_String (out_UBfname) & " successfully.");
     
       ATIO.Put_Line ("PROCESSING ...");
       
+      -- TO UPPERCASE ENTIRE STRING
       while not ATIO.End_Of_File (inp_fhandle) loop
          inp_UBlineStr := ASU.To_Unbounded_String(ATIO.Get_Line (inp_fhandle));
       
-         -- PROCESS THE LINE -- exec11_replace_uppercase_all_chars
-         -- write line to terminal
-         -- ATIO.Put_Line (ATIO.Standard_Output, ACH.To_Upper (ASU.To_String(inp_UBlineStr)) );
-         
          -- write line to output file
          ATIO.Put_Line (out_fhandle, ACH.To_Upper (ASU.To_String(inp_UBlineStr)) );
-                          
+                         
       end loop;   
+      
+      -- ATIO.Reset (out_fhandle);
+      
       
       ATIO.Close (inp_fhandle);
       ATIO.Put_Line ("Close input  file : " & ASU.To_String (inp_UBfname)  & " successfully.");
@@ -200,12 +203,11 @@ is
       
       ATIO.Open   (inp_fhandle, ATIO.In_File, ASU.To_String (inp_UBfname));
       ATIO.Put_Line ("Opened input file : " & ASU.To_String (inp_UBfname)  & " successfully.");
-      
       ATIO.Create (out_fhandle, ATIO.Out_File, ASU.To_String (out_UBfname));
       ATIO.Put_Line ("Opened output file: " &  ASU.To_String (out_UBfname) & " successfully.");
-    
       ATIO.Put_Line ("PROCESSING ...");
-            
+      -- ==================================================
+      
       -- VERY IMPORTANT ==================================
       -- The (while..loop) below processes only one field error per line.
       -- If for every line scanned, there are more that one field "error" of
@@ -232,88 +234,81 @@ is
          -- The substring exists somewhere in the line string if location is not zero
          idx_location_X := ASU.Index (inp_UBlineStr, "X [", AS.Forward, ASM.Identity);   
          if ( idx_location_X /= 0 ) then
-            -- DISPLAY LINE BEFORE DELETION
-            ATIO.Put ("LINE: " & Integer'Image(lineNum) & " idx_location_X = " & Natural'Image(idx_location_X) );
-            ATIO.Put_Line (" inp_UBlineStr: " &  ASU.To_String (inp_UBlineStr));
+               
+               -- DISPLAY LINE BEFORE DELETION
+               -- ============================
+            -- ATIO.Put ("LINE: " & Integer'Image(lineNum) & " idx_location_X = " & Natural'Image(idx_location_X) );
+            -- ATIO.Put_Line (" inp_UBlineStr: " &  ASU.To_String (inp_UBlineStr));
             
-            -- Delete from location-number(start) through location-number(end)
+               -- DELETE from location-number(start) through location-number(end)
+              -- ================================
             ASU.Delete (inp_UBlineStr, idx_location_X + 1, idx_location_X + 1);
             
-            -- RECHECK LINE AFTER REPLACEMENT
-            ATIO.Put ("LINE: " & Integer'Image(lineNum) & " idx_location_X = " & Natural'Image(idx_location_X) );
-            ATIO.Put_Line (" inp_UBlineStr: " &  ASU.To_String (inp_UBlineStr));
+               -- RECHECK LINE AFTER REPLACEMENT
+               -- =============================
+            -- ATIO.Put ("LINE: " & Integer'Image(lineNum) & " idx_location_X = " & Natural'Image(idx_location_X) );
+            -- ATIO.Put_Line (" inp_UBlineStr: " &  ASU.To_String (inp_UBlineStr));
+         
          end if;
          
          idx_location_Y := ASU.Index (inp_UBlineStr, "Y [", AS.Forward, ASM.Identity);     
          if ( idx_location_Y /= 0 ) then
-            ATIO.Put ("LINE: " & Integer'Image(lineNum) & " idx_location_Y = " & Natural'Image(idx_location_Y) );
-            ATIO.Put_Line (" inp_UBlineStr: " &  ASU.To_String (inp_UBlineStr));
-            ASU.Delete (inp_UBlineStr, idx_location_Y + 1, idx_location_Y + 1);
-            ATIO.Put ("LINE: " & Integer'Image(lineNum) & " idx_location_Y = " & Natural'Image(idx_location_Y) );
-            ATIO.Put_Line (" inp_UBlineStr: " &  ASU.To_String (inp_UBlineStr));
+             
+               ASU.Delete (inp_UBlineStr, idx_location_Y + 1, idx_location_Y + 1);
+               
          end if;
          
          idx_location_Z := ASU.Index (inp_UBlineStr, "Z [", AS.Forward, ASM.Identity);  
          if ( idx_location_Z /= 0 ) then
-            ATIO.Put ("LINE: " & Integer'Image(lineNum) & " idx_location_Z = " & Natural'Image(idx_location_Z) );
-            ATIO.Put_Line (" inp_UBlineStr: " &  ASU.To_String (inp_UBlineStr));
+                           
             ASU.Delete (inp_UBlineStr, idx_location_Z + 1, idx_location_Z + 1);
-            ATIO.Put ("LINE: " & Integer'Image(lineNum) & " idx_location_Z = " & Natural'Image(idx_location_Z) );
-            ATIO.Put_Line (" inp_UBlineStr: " &  ASU.To_String (inp_UBlineStr));
+           
          end if;
          
          idx_location_I := ASU.Index (inp_UBlineStr, "I [", AS.Forward, ASM.Identity);     
          if ( idx_location_I /= 0 ) then
-            ATIO.Put ("LINE: " & Integer'Image(lineNum) & " idx_location_I = " & Natural'Image(idx_location_I) );
-            ATIO.Put_Line (" inp_UBlineStr: " &  ASU.To_String (inp_UBlineStr));
+            
             ASU.Delete (inp_UBlineStr, idx_location_I + 1, idx_location_I + 1);
-            ATIO.Put ("LINE: " & Integer'Image(lineNum) & " idx_location_I = " & Natural'Image(idx_location_I) );
-            ATIO.Put_Line (" inp_UBlineStr: " &  ASU.To_String (inp_UBlineStr));
+           
          end if;
          
          idx_location_J := ASU.Index (inp_UBlineStr, "J [", AS.Forward, ASM.Identity);    
          if ( idx_location_J /= 0 ) then
-            ATIO.Put ("LINE: " & Integer'Image(lineNum) & " idx_location_J = " & Natural'Image(idx_location_J) );
-            ATIO.Put_Line (" inp_UBlineStr: " &  ASU.To_String (inp_UBlineStr));
+            
             ASU.Delete (inp_UBlineStr, idx_location_J + 1, idx_location_J + 1);
-            ATIO.Put ("LINE: " & Integer'Image(lineNum) & " idx_location_J = " & Natural'Image(idx_location_J) );
-            ATIO.Put_Line (" inp_UBlineStr: " &  ASU.To_String (inp_UBlineStr));
+           
          end if;
          
          idx_location_K := ASU.Index (inp_UBlineStr, "K [", AS.Forward, ASM.Identity);  
          if ( idx_location_K /= 0 ) then
-            ATIO.Put ("LINE: " & Integer'Image(lineNum) & " idx_location_K = " & Natural'Image(idx_location_K) );
-            ATIO.Put_Line (" inp_UBlineStr: " &  ASU.To_String (inp_UBlineStr));
+            
             ASU.Delete (inp_UBlineStr, idx_location_K + 1, idx_location_K + 1);
-            ATIO.Put ("LINE: " & Integer'Image(lineNum) & " idx_location_K = " & Natural'Image(idx_location_K) );
-            ATIO.Put_Line (" inp_UBlineStr: " &  ASU.To_String (inp_UBlineStr));
+           
          end if;
          
          idx_location_F := ASU.Index (inp_UBlineStr, "F [", AS.Forward, ASM.Identity);     
          if ( idx_location_F /= 0 ) then
-            ATIO.Put ("LINE: " & Integer'Image(lineNum) & " "); 
-            ATIO.Put ("idx_location_F = " & Natural'Image(idx_location_F) );
-            ATIO.Put_Line (" inp_UBlineStr: " &  ASU.To_String (inp_UBlineStr));
-        
+            
             ASU.Delete (inp_UBlineStr, idx_location_F + 1, idx_location_F + 1);
-            
-            -- RECHECK AFTER REPLACEMENT
-            ATIO.Put ("LINE: " & Integer'Image(lineNum) & " "); 
-            ATIO.Put ("idx_location_F = " & Natural'Image(idx_location_F) );
-            ATIO.Put_Line (" inp_UBlineStr: " &  ASU.To_String (inp_UBlineStr));
-            
+                              
          end if;
          
-         -- Write to terminal
-         ATIO.Put_Line (ATIO.Standard_Output, ASU.To_String (inp_UBlineStr));
-         -- Write to output file    
-         ATIO.Put_Line (out_fhandle, ASU.To_String (inp_UBlineStr));
+            -- Write to terminal (AFTER SUBSTRING DELETION)
+            -- ========================
+            -- ATIO.Put_Line (ATIO.Standard_Output, ASU.To_String (inp_UBlineStr));
+            
+            -- Write to output file   (AFTER SUBSTRING DELETION) 
+            -- ========================
+            ATIO.Put_Line (out_fhandle, ASU.To_String (inp_UBlineStr));
+            
                            
       -- =================================================     
       end loop; -- END while..loop
       
       end loop; -- END for..loop
       
+      -- ==================================================
+      ATIO.Put_Line ("COMPLETED. EXITING ...");
       ATIO.Close (inp_fhandle);
       ATIO.Put_Line ("Close input  file : " & ASU.To_String (inp_UBfname)  & " successfully.");
       ATIO.Close (out_fhandle);
@@ -329,11 +324,52 @@ is
    -- with SPARK_Mode => on
    is
    
+      inp_fhandle : ATIO.File_Type;
+      out_fhandle : ATIO.File_Type;
+    
+      inp_UBlineStr     : ASU.Unbounded_String;   -- initialization not needed
+      curr_lenUBlineStr : Natural := 999;         -- use ASU.Length
+      firstChar         : String  := "1";         -- use ASU.Unbounded_Slice
+      
+      
+      
    begin
       ATIO.New_Line;
       PADTS.dtstamp; ATIO.Put_Line ("Executing exec13 ...");
    
-   
+      ATIO.Open   (inp_fhandle, ATIO.In_File, ASU.To_String (inp_UBfname));
+      ATIO.Put_Line ("Opened input file : " & ASU.To_String (inp_UBfname)  & " successfully.");
+      ATIO.Create (out_fhandle, ATIO.Out_File, ASU.To_String (out_UBfname));
+      ATIO.Put_Line ("Opened output file: " &  ASU.To_String (out_UBfname) & " successfully.");
+      ATIO.Put_Line ("PROCESSING ...");
+      -- ==================================================  
+      
+      -- (1) To remove blank lines
+      while not ATIO.End_Of_File (inp_fhandle) loop
+         inp_UBlineStr := ASU.To_Unbounded_String(ATIO.Get_Line (inp_fhandle));
+               
+         firstChar  := ASU.To_String (ASU.Unbounded_Slice(inp_UBlineStr, 1, 1));
+         
+         -- for both comment and blank lines
+         if (firstChar = "(" ) then
+            null;
+         else
+             ATIO.Put_Line (ASU.To_String (inp_UBlineStr)); 
+             ATIO.Put_Line (out_fhandle, ASU.To_String (inp_UBlineStr)); 
+         end if;
+      
+      end loop;
+         
+           
+      -- ==================================================
+      ATIO.Put_Line ("COMPLETED. EXITING ...");
+      ATIO.Close (inp_fhandle);
+      ATIO.Put_Line ("Close input  file : " & ASU.To_String (inp_UBfname)  & " successfully.");
+      ATIO.Close (out_fhandle);
+      ATIO.Put_Line ("Close output file : " & ASU.To_String (out_UBfname)  & " successfully.");
+      PADTS.exec_delay_sec (1); 
+      PADTS.dtstamp; ATIO.Put_Line ("Completed exec13.");
+      
    end exec13_remove_comment_and_blank_lines;
    
    -- ====================================================

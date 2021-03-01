@@ -1,0 +1,47 @@
+2021-02-28 14:30:26.82812851999 Bismillah 3 times WRY
+2021-02-28 14:30:26.82812854886 Running exec_report_pkg10_standardize_gcode_to_ngc
+
+2021-02-28 14:30:27.82813273685 RUNNING ... exec_report_out_gcode_textfile_10
+2021-02-28 14:30:27.82813281708 inp_fname = files/out_gcode_file_10.txt
+2021-02-28 14:30:27.82813283218 app_fname = files/report_pkg10_standardize_gcode_to_ngc.txt
+2021-02-28 14:30:27.82813284481 PROCESSING ...
+
+2021-02-28 14:30:27.82814026257 Total lineCount    =  328
+2021-02-28 14:30:27.82814029906 count_BlankLine    =  62
+2021-02-28 14:30:27.82814031282 count_NonBlankLine =  266
+2021-02-28 14:30:27.82814032793 count_Comment      =  43
+2021-02-28 14:30:27.82814034447 count_NonComment   =  223
+
+2021-02-28 14:30:27.82814036124 count_Percent      =  2
+2021-02-28 14:30:27.82814037471 count_Hash         =  7
+2021-02-28 14:30:27.82814038818 count_MCode        =  3
+2021-02-28 14:30:27.82814040177 count_GCode        =  211
+2021-02-28 14:30:27.82814041505 Sum_AllCodes       =  223
+2021-02-28 14:30:27.82814042801 max_lenUBlineStr   =  101
+
+2021-02-28 14:30:27.82815173059 count_Hash6        =  1 	(X axis offset)
+2021-02-28 14:30:27.82815177561 count_Hash7        =  1 	(Y axis offset)
+2021-02-28 14:30:27.82815180654 count_Hash8        =  1 	(Z axis offset)
+2021-02-28 14:30:27.82815183361 count_Hash10       =  1 	(XY axes scaling factor)
+2021-02-28 14:30:27.82815185420 count_Hash11       =  1 	(Z  axis scaling factor)
+2021-02-28 14:30:27.82815187481 count_Hash20       =  1 	(Feedrate Spindle)
+2021-02-28 14:30:27.82815190332 count_Hash21       =  1 	(Feedrate Spindle)
+2021-02-28 14:30:27.82815191876 sum_Hash           =  7
+
+2021-02-28 14:30:27.82815193634 count_M0           =  0	(pause a running program temporarily)
+2021-02-28 14:30:27.82815195716 count_M1           =  0	(pause program temporarily if stop switch ON)
+2021-02-28 14:30:27.82815197119 count_M2           =  1	(end the program)
+2021-02-28 14:30:27.82815198473 count_M3           =  1	(start spindle clockwise at S speed)
+2021-02-28 14:30:27.82815199919 count_M4           =  0	(start spindle counter-clockwise at S speed)
+2021-02-28 14:30:27.82815201400 count_M5           =  1	(stop the spindle)
+2021-02-28 14:30:27.82815202917 sum_MX             =  3
+
+2021-02-28 14:30:27.82815204481 count_G00          =  37	(rapid linear move)
+2021-02-28 14:30:27.82815205904 count_G01          =  93	(linear move)
+2021-02-28 14:30:27.82815207295 count_G02          =  40	(clockwise arc move)
+2021-02-28 14:30:27.82815208698 count_G03          =  40	(counter-clockwise arc move)
+2021-02-28 14:30:27.82815210054 count_G21          =  1	(use mm length units. G20 = inches)
+2021-02-28 14:30:27.82815211769 sum_GXX            =  211
+
+2021-02-28 14:30:27.82815213376 COMPLETED. EXITING ...
+2021-02-28 14:30:27.82815214529 =====================================================
